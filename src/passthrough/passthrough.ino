@@ -1,0 +1,105 @@
+// SO-101 interposer, stage 1: transparent pass-through (no safety checks yet)
+//
+// Host side  (UART1, hardware): TX1 = GP4 -> U1B input, RX1 = GP5 <- BUS_H via 330R, DIR_H = GP6 -> U1B OE
+// Servo side (UART0, hardware): TX0 = GP0 -> U1A input, RX0 = GP1 <- BUS_S via 330R, DIR_S = GP2 -> U1A OE
+// TRIP  = GP15 -> relay IN (HIGH = relay energized = servo power on)
+// ESTOP = GP14 <- E-stop NO contact (other side to GND), internal pull-up
+//
+// Build: arduino-cli compile --fqbn rp2040:rp2040:rpipico --output-dir build passthrough
+
+#include <Arduino.h>
+
+const int DIR_H = 6, DIR_S = 2, TRIP = 15, ESTOP = 14;
+const uint32_t BAUD = 1000000;
+
+#define HostBus  Serial2                        // UART1: TX = GP4, RX = GP5
+#define ServoBus Serial1                        // UART0: TX = GP0, RX = GP1
+
+struct Parser {                                 // Feetech packet: FF FF ID LEN ...LEN bytes, last = checksum
+  const int maxLen;                             // reject implausible LEN so corruption can't stall us
+  uint8_t buf[264]; int n = 0, need = 0; uint32_t last = 0, bad = 0;
+  explicit Parser(int m) : maxLen(m) {}
+
+  void drop(int k) { n -= k; memmove(buf, buf + k, n); }
+
+  void push(uint8_t b) {
+    uint32_t now = micros();
+    if (n && now - last > 2000) n = 0;          // drop stale partial packet
+    last = now;
+    if (n == (int)sizeof(buf)) drop(1);
+    buf[n++] = b;
+  }
+
+  // True when buf[0..need) is a complete packet with a good checksum; call consume() after using it.
+  bool next() {
+    while (n >= 2) {
+      if (buf[0] != 0xFF || buf[1] != 0xFF) { drop(1); continue; }
+      if (n < 4) return false;
+      if (buf[2] == 0xFF) { drop(1); continue; }                        // extra header byte
+      if (buf[3] < 2 || buf[3] > maxLen) { bad++; drop(1); continue; }
+      need = 4 + buf[3];
+      if (n < need) return false;
+      uint8_t sum = 0;
+      for (int i = 2; i < need - 1; i++) sum += buf[i];
+      if ((uint8_t)~sum == buf[need - 1]) return true;
+      bad++; drop(1);                           // bad checksum: rescan the rest for a header
+    }
+    if (n == 1 && buf[0] != 0xFF) n = 0;
+    return false;
+  }
+  void consume() { drop(need); }
+};
+
+Parser fromHost(250), fromServo(64);
+int echoH = 0, echoS = 0;                       // our own bytes we'll hear back on each bus
+uint32_t tH = 0, tS = 0, pktHS = 0, pktSH = 0, lastPrint = 0;
+
+void sendOn(HardwareSerial &port, int dir, const uint8_t *p, int len, int &echo, uint32_t &t) {
+  digitalWrite(dir, HIGH);                      // enable 74HC126 gate onto the bus
+  port.write(p, len);
+  port.flush();                                 // wait for TX to drain
+  digitalWrite(dir, LOW);                       // release bus so the other side can talk
+  echo += len; t = micros();
+}
+
+void setup() {
+  pinMode(DIR_H, OUTPUT); digitalWrite(DIR_H, LOW);
+  pinMode(DIR_S, OUTPUT); digitalWrite(DIR_S, LOW);
+  pinMode(ESTOP, INPUT_PULLUP);
+  pinMode(TRIP, OUTPUT); digitalWrite(TRIP, HIGH);   // energize relay = servo power on
+
+  HostBus.setTX(4); HostBus.setRX(5); HostBus.setFIFOSize(1024); HostBus.begin(BAUD);     // host side
+  ServoBus.setTX(0); ServoBus.setRX(1); ServoBus.setFIFOSize(1024); ServoBus.begin(BAUD); // servo side
+  Serial.begin(115200);                         // USB status output
+}
+
+void loop() {
+  bool estop = digitalRead(ESTOP) == LOW;       // NO contact closes to GND when pressed
+  digitalWrite(TRIP, estop ? LOW : HIGH);
+
+  while (HostBus.available()) {                 // host -> servos
+    uint8_t b = HostBus.read();
+    if (echoH > 0) { echoH--; continue; }
+    fromHost.push(b);
+    while (fromHost.next()) {
+      sendOn(ServoBus, DIR_S, fromHost.buf, fromHost.need, echoS, tS);
+      fromHost.consume(); pktHS++;
+    }
+  }
+  while (ServoBus.available()) {                // servos -> host
+    uint8_t b = ServoBus.read();
+    if (echoS > 0) { echoS--; continue; }
+    fromServo.push(b);
+    while (fromServo.next()) {
+      sendOn(HostBus, DIR_H, fromServo.buf, fromServo.need, echoH, tH);
+      fromServo.consume(); pktSH++;
+    }
+  }
+  if (echoH && micros() - tH > 500) echoH = 0;  // resync if an echo byte was lost
+  if (echoS && micros() - tS > 500) echoS = 0;
+
+  if (millis() - lastPrint > 1000) {
+    lastPrint = millis();
+    Serial.printf("H->S %lu  S->H %lu  badH %lu  badS %lu  estop=%d\n", pktHS, pktSH, fromHost.bad, fromServo.bad, estop);
+  }
+}
