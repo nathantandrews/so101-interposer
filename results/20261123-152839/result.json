@@ -1,0 +1,91 @@
+{
+ "time": "2026-11-23T15:28:45.988044",
+ "label": "passthrough",
+ "port": "/dev/serial/by-id/usb-1a86_USB_Single_Serial_5B90103276-if00",
+ "before": {
+  "shoulder_pan": {
+   "id": 1,
+   "homing_offset": 1847,
+   "range_min": 738,
+   "range_max": 3460
+  },
+  "shoulder_lift": {
+   "id": 2,
+   "homing_offset": 1770,
+   "range_min": 895,
+   "range_max": 3175
+  },
+  "elbow_flex": {
+   "id": 3,
+   "homing_offset": -907,
+   "range_min": 808,
+   "range_max": 3031
+  },
+  "wrist_flex": {
+   "id": 4,
+   "homing_offset": -1631,
+   "range_min": 892,
+   "range_max": 3199
+  },
+  "wrist_roll": {
+   "id": 5,
+   "homing_offset": 157,
+   "range_min": 0,
+   "range_max": 4095
+  },
+  "gripper": {
+   "id": 6,
+   "homing_offset": 1603,
+   "range_min": 1983,
+   "range_max": 3475
+  }
+ },
+ "after": {
+  "shoulder_pan": {
+   "id": 1,
+   "homing_offset": 0,
+   "range_min": 0,
+   "range_max": 4095
+  },
+  "shoulder_lift": {
+   "id": 2,
+   "homing_offset": 0,
+   "range_min": 0,
+   "range_max": 4095
+  },
+  "elbow_flex": {
+   "id": 3,
+   "homing_offset": 0,
+   "range_min": 0,
+   "range_max": 4095
+  },
+  "wrist_flex": {
+   "id": 4,
+   "homing_offset": 0,
+   "range_min": 0,
+   "range_max": 4095
+  },
+  "wrist_roll": {
+   "id": 5,
+   "homing_offset": 0,
+   "range_min": 0,
+   "range_max": 4095
+  },
+  "gripper": {
+   "id": 6,
+   "homing_offset": 0,
+   "range_min": 0,
+   "range_max": 4095
+  }
+ },
+ "errors": {},
+ "limits_changed": [
+  "shoulder_pan",
+  "shoulder_lift",
+  "elbow_flex",
+  "wrist_flex",
+  "gripper"
+ ],
+ "restore_left": [],
+ "label_note": "label added after the run, as reported by the operator"
+}
