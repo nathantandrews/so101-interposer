@@ -175,6 +175,7 @@ void loop() {
           fromHost.consume();
           continue;
         }
+        clampPacket(fromHost.buf, fromHost.need);
       }
       if (v == ALLOW) {
         sendOn(ServoBus, DIR_S, fromHost.buf, fromHost.need, echoS, tS);

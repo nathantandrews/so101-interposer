@@ -48,10 +48,20 @@ static bool held(int id) { return sv[id].goal == sv[id].pos; }
 
 int main() {
   setup(); Serial1.onSend = servos;
-  // every joint, both ends: the calibrated ends pass, one tick past them holds at the measured position
+  // every joint, both ends: the calibrated ends pass, up to SLACK past is clamped, further holds in place
   for (int id = 1; id <= 6; id++) for (int end = 0; end < 2; end++) {
-    int edge = end ? JOINT[id].hi : JOINT[id].lo, past = edge + (end ? 1 : -1);
+    int edge = end ? JOINT[id].hi : JOINT[id].lo, dir = end ? 1 : -1, past = edge + dir * (SLACK + 1);
     fresh(); host(goals(with(id, edge))); CHECK(sv[id].goal == edge && !hold.on);
+    for (int over : {1, 42, 57, SLACK}) {
+      int g = edge + dir * over;
+      if (g < 0 || g > 4095) continue;
+      fresh(); host(goals(with(id, g)));
+      CHECK(sv[id].goal == edge && !hold.on);
+      for (int j = 1; j <= 6; j++) if (j != id) CHECK(sv[j].goal == MID.at(j));
+      uint8_t sum = 0; B &p = Serial1.sent.back();
+      for (size_t i = 2; i < p.size(); i++) sum += p[i];
+      CHECK(sum == 0xFF);                       // valid checksum after clamping
+    }
     if (past < 0 || past > 4095) continue;      // policy.h already rejects these
     fresh(); host(goals(with(id, past)), 12000);
     CHECK(hold.on && hold.count == 1 && holdFail == 0);
