@@ -1,0 +1,9 @@
+{
+  "test": "on-arm joint-limit hold, wrist_roll limit 341..3755 (+-150 deg)",
+  "firmware": "53cb0bb",
+  "method": "teleop through monitor; operator slowly turned leader wrist past the limit twice, then back",
+  "pico_counters": {"holds": 2, "hold_joint": 5, "goals_dropped": 189, "hold_failures": 0, "hold_active_at_end": false, "blocked_writes": 24, "badH": 0, "badS": 0},
+  "observed": "follower froze both times; wrist stayed put with no drift or unwinding; resumed tracking after leader returned inside the limit",
+  "false_holds": 0,
+  "passes": "2/2"
+}
