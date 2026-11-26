@@ -131,7 +131,7 @@ void holdHere() {
       if (!(got & want & (1 << id))) continue;
       if (!torque[id]) { limp |= 1 << id; continue; }
       if (where[id] > 4095) continue;           // negative or bad reading: try again
-      int g = clampGoal(id, where[id]);
+      int g = where[id];                        // stay put, even outside JOINT: never move to get back in
       wr[n++] = id; wr[n++] = g & 0xFF; wr[n++] = g >> 8;
       move |= 1 << id;
     }

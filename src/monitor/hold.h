@@ -1,10 +1,12 @@
 // Joint envelope and hold state. Pure C++ so tests/ can run it on a PC.
 // Limits = follower calibration of 2026-11-21 (my_follower.json). Recalibrating means editing and reflashing.
+// wrist_roll is calibrated 0..4095 (full turn), so its reading wraps 4095 <-> 0 and a goal can jump a whole
+// turn. The monitor keeps it to +-150 degrees around 2048 so a wrap shows up as a violation.
 #pragma once
 #include <stdint.h>
 
 struct Range { int lo, hi; };
-static const Range JOINT[7] = {{0, 0}, {738, 3460}, {895, 3175}, {808, 3031}, {892, 3199}, {0, 4095}, {1983, 3475}};
+static const Range JOINT[7] = {{0, 0}, {738, 3460}, {895, 3175}, {808, 3031}, {892, 3199}, {341, 3755}, {1983, 3475}};
 // A goal up to SLACK ticks past JOINT is forwarded clamped to JOINT; further out is a violation and holds.
 // LeRobot's default degree mode does not clamp goals: measured 2026-11-25, this leader's calibrated ends ask
 // for up to 57 ticks past the follower's shoulder_lift range. 80 ticks = 7 degrees.

@@ -89,8 +89,14 @@ int main() {
   fresh(); sv[3].mute = 2; host(goals(with(1, 4000)), 30000); CHECK(held(3) && holdFail == 0);
   fresh(); sv[3].mute = 3; host(goals(with(1, 4000)), 30000); CHECK(!held(3) && held(1) && holdFail == 1 && needHold);
   host(goals(with(1, 4000)), 30000); CHECK(held(3) && !needHold);
-  // measured outside the range: held at the edge (what the servo's own limit does)
-  fresh(); sv[2].pos = 890; host(goals(with(1, 4000)), 12000); CHECK(sv[2].goal == 895);
+  // a joint already outside the range is held where it is, not pulled back to the edge
+  fresh(); sv[5].pos = 3900; host(goals(with(1, 4000)), 12000); CHECK(hold.on && held(5));
+  // wrist_roll wrap: the leader crosses 4095 -> 0, so the goal jumps a whole turn; both sides hold
+  fresh(); host(goals(with(5, 3700))); CHECK(sv[5].goal == 3700 && !hold.on);
+  host(goals(with(5, 3830))); CHECK(sv[5].goal == 3755 && !hold.on);
+  host(goals(with(5, 4080)), 12000); CHECK(hold.on && held(5));
+  host(goals(with(5, 15)), 12000); CHECK(hold.on && held(5) && hold.count == 1);
+  run(600000); host(goals(with(5, 15))); CHECK(hold.on && held(5));
   // a host read in flight when the bad goal arrives still reaches the host
   fresh(); put(Serial2, mk(254, {0x82, 56, 2, 1, 2, 3, 4, 5, 6}), simUs);
   put(Serial2, goals(with(1, 4000)), simUs + 150); run(20000);
