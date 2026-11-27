@@ -1,0 +1,79 @@
+{
+ "capture_s": 15.0,
+ "host_line": "D2",
+ "servo_line": "D1",
+ "host_to_servo": {
+  "delay": {
+   "n": 1776,
+   "median_us": 213.4,
+   "p99_us": 277.6,
+   "max_us": 282.5,
+   "min_us": 145.9
+  },
+  "turnaround": {
+   "n": 1776,
+   "median_us": 12.6,
+   "p99_us": 19.2,
+   "max_us": 24.0,
+   "min_us": 6.7
+  },
+  "packet_time": {
+   "n": 1776,
+   "median_us": 199.7,
+   "p99_us": 258.8,
+   "max_us": 260.5,
+   "min_us": 139.1
+  },
+  "turnaround_by_type": {
+   "0x82 len14": {
+    "n": 888,
+    "median_us": 10.1,
+    "p99_us": 13.2,
+    "max_us": 15.6,
+    "min_us": 6.7
+   },
+   "0x83 len26": {
+    "n": 888,
+    "median_us": 15.1,
+    "p99_us": 21.2,
+    "max_us": 24.0,
+    "min_us": 11.9
+   }
+  }
+ },
+ "servo_to_host": {
+  "delay": {
+   "n": 5328,
+   "median_us": 131.4,
+   "p99_us": 181.4,
+   "max_us": 187.2,
+   "min_us": 85.3
+  },
+  "turnaround": {
+   "n": 5328,
+   "median_us": 51.7,
+   "p99_us": 101.7,
+   "max_us": 107.5,
+   "min_us": 5.7
+  },
+  "packet_time": {
+   "n": 5328,
+   "median_us": 79.7,
+   "p99_us": 79.8,
+   "max_us": 79.8,
+   "min_us": 79.5
+  },
+  "turnaround_by_type": {
+   "reply len8": {
+    "n": 5328,
+    "median_us": 51.7,
+    "p99_us": 101.7,
+    "max_us": 107.5,
+    "min_us": 5.7
+   }
+  }
+ },
+ "holds": [],
+ "goals_clamped": 32,
+ "unmatched_nongoal_host_packets": 0
+}

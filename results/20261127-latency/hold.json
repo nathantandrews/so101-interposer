@@ -1,0 +1,139 @@
+{
+ "capture_s": 60.0,
+ "host_line": "D2",
+ "servo_line": "D1",
+ "host_to_servo": {
+  "delay": {
+   "n": 3611,
+   "median_us": 91.9,
+   "p99_us": 126.6,
+   "max_us": 227.1,
+   "min_us": 85.5
+  },
+  "turnaround": {
+   "n": 3611,
+   "median_us": 10.4,
+   "p99_us": 16.7,
+   "max_us": 147.6,
+   "min_us": 5.9
+  },
+  "packet_time": {
+   "n": 3611,
+   "median_us": 80.5,
+   "p99_us": 110.4,
+   "max_us": 139.3,
+   "min_us": 79.5
+  },
+  "turnaround_by_type": {
+   "0x02 len8": {
+    "n": 1849,
+    "median_us": 9.2,
+    "p99_us": 13.3,
+    "max_us": 147.6,
+    "min_us": 5.9
+   },
+   "0x03 len8": {
+    "n": 14,
+    "median_us": 10.2,
+    "p99_us": 91.7,
+    "max_us": 103.3,
+    "min_us": 6.8
+   },
+   "0x82 len14": {
+    "n": 5,
+    "median_us": 9.1,
+    "p99_us": 10.4,
+    "max_us": 10.4,
+    "min_us": 8.4
+   },
+   "0x83 len11": {
+    "n": 1743,
+    "median_us": 11.7,
+    "p99_us": 18.0,
+    "max_us": 29.3,
+    "min_us": 8.3
+   }
+  }
+ },
+ "servo_to_host": {
+  "delay": {
+   "n": 1893,
+   "median_us": 88.8,
+   "p99_us": 109.8,
+   "max_us": 181.4,
+   "min_us": 65.9
+  },
+  "turnaround": {
+   "n": 1893,
+   "median_us": 9.1,
+   "p99_us": 37.3,
+   "max_us": 101.7,
+   "min_us": 5.6
+  },
+  "packet_time": {
+   "n": 1893,
+   "median_us": 79.7,
+   "p99_us": 79.9,
+   "max_us": 79.9,
+   "min_us": 59.6
+  },
+  "turnaround_by_type": {
+   "reply len6": {
+    "n": 14,
+    "median_us": 9.4,
+    "p99_us": 33.7,
+    "max_us": 37.0,
+    "min_us": 6.2
+   },
+   "reply len7": {
+    "n": 12,
+    "median_us": 43.2,
+    "p99_us": 78.3,
+    "max_us": 79.0,
+    "min_us": 12.0
+   },
+   "reply len8": {
+    "n": 1867,
+    "median_us": 9.0,
+    "p99_us": 13.8,
+    "max_us": 101.7,
+    "min_us": 5.6
+   }
+  }
+ },
+ "holds": [
+  {
+   "t_s": 15.1705,
+   "to_hold_read_us": 1021.6,
+   "to_hold_write_us": 2799.2
+  },
+  {
+   "t_s": 29.2171,
+   "to_hold_read_us": 1018.4,
+   "to_hold_write_us": 2796.2
+  },
+  {
+   "t_s": 43.2031,
+   "to_hold_read_us": 1021.3,
+   "to_hold_write_us": 2801.0
+  },
+  {
+   "t_s": 57.2053,
+   "to_hold_read_us": 1020.1,
+   "to_hold_write_us": 2794.4
+  }
+ ],
+ "release_wait_episodes": 4,
+ "to_hold_read": {
+  "n": 4,
+  "median_us": 1020.7,
+  "max_us": 1021.6
+ },
+ "to_hold_write": {
+  "n": 4,
+  "median_us": 2797.7,
+  "max_us": 2801.0
+ },
+ "goals_clamped": 0,
+ "unmatched_nongoal_host_packets": 0
+}
