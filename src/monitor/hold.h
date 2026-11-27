@@ -1,19 +1,23 @@
 // Joint envelope and hold state. Pure C++ so tests/ can run it on a PC.
-// Limits = follower calibration of 2026-11-21 (my_follower.json). Recalibrating means editing and reflashing.
+// Limits = follower calibration of 2026-11-27 (my_follower.json). Recalibrating means editing and reflashing.
 // wrist_roll is calibrated 0..4095 (full turn), so its reading wraps 4095 <-> 0 and a goal can jump a whole
-// turn. The monitor keeps it to +-150 degrees around 2048 so a wrap shows up as a violation.
+// turn. Recentered on 2026-11-27, its physical stops read about 172 and 3976; the limit sits 150 ticks
+// inside each, so a clamped goal (forwarded as the limit) stops short of the stop, and a wrap is a violation.
 #pragma once
 #include <stdint.h>
 
 struct Range { int lo, hi; };
-static const Range JOINT[7] = {{0, 0}, {738, 3460}, {895, 3175}, {808, 3031}, {892, 3199}, {341, 3755}, {1983, 3475}};
+static const Range JOINT[7] = {{0, 0}, {728, 3472}, {802, 3192}, {916, 3128}, {794, 2848}, {322, 3826}, {2034, 3549}};
 // A goal up to SLACK ticks past JOINT is forwarded clamped to JOINT; further out is a violation and holds.
 // LeRobot's default degree mode does not clamp goals: measured 2026-11-25, this leader's calibrated ends ask
 // for up to 57 ticks past the follower's shoulder_lift range. 80 ticks = 7 degrees.
-static const int SLACK = 80;
+// The leader's wrist travels further than the follower's (measured 2026-11-27): wrist_flex asks 150 ticks past
+// both ends, wrist_roll's stops ask 185 / 112 past the limits above. Those two get 200 (18 degrees); a wrap
+// (goal near 0 or 4095) still lands outside and holds.
+static const int SLACK[7] = {0, 80, 80, 80, 200, 200, 80};
 static const uint32_t RELEASE_MS = 500;        // only safe goals for this long end a hold
 
-inline bool goalOk(uint8_t id, int g) { return g >= JOINT[id].lo - SLACK && g <= JOINT[id].hi + SLACK; }
+inline bool goalOk(uint8_t id, int g) { return g >= JOINT[id].lo - SLACK[id] && g <= JOINT[id].hi + SLACK[id]; }
 inline int clampGoal(uint8_t id, int g) { return g < JOINT[id].lo ? JOINT[id].lo : g > JOINT[id].hi ? JOINT[id].hi : g; }
 
 // First joint in a SYNC WRITE Goal_Position packet (already checked by checkPacket) that is out of range, or 0.

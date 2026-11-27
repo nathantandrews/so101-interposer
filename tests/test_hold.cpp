@@ -50,9 +50,9 @@ int main() {
   setup(); Serial1.onSend = servos;
   // every joint, both ends: the calibrated ends pass, up to SLACK past is clamped, further holds in place
   for (int id = 1; id <= 6; id++) for (int end = 0; end < 2; end++) {
-    int edge = end ? JOINT[id].hi : JOINT[id].lo, dir = end ? 1 : -1, past = edge + dir * (SLACK + 1);
+    int edge = end ? JOINT[id].hi : JOINT[id].lo, dir = end ? 1 : -1, past = edge + dir * (SLACK[id] + 1);
     fresh(); host(goals(with(id, edge))); CHECK(sv[id].goal == edge && !hold.on);
-    for (int over : {1, 42, 57, SLACK}) {
+    for (int over : {1, 42, 57, SLACK[id]}) {
       int g = edge + dir * over;
       if (g < 0 || g > 4095) continue;
       fresh(); host(goals(with(id, g)));
@@ -93,7 +93,7 @@ int main() {
   fresh(); sv[5].pos = 3900; host(goals(with(1, 4000)), 12000); CHECK(hold.on && held(5));
   // wrist_roll wrap: the leader crosses 4095 -> 0, so the goal jumps a whole turn; both sides hold
   fresh(); host(goals(with(5, 3700))); CHECK(sv[5].goal == 3700 && !hold.on);
-  host(goals(with(5, 3830))); CHECK(sv[5].goal == 3755 && !hold.on);
+  host(goals(with(5, 3830))); CHECK(sv[5].goal == 3826 && !hold.on);
   host(goals(with(5, 4080)), 12000); CHECK(hold.on && held(5));
   host(goals(with(5, 15)), 12000); CHECK(hold.on && held(5) && hold.count == 1);
   run(600000); host(goals(with(5, 15))); CHECK(hold.on && held(5));

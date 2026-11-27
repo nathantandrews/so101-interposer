@@ -1,0 +1,348 @@
+{
+ "time": "2026-11-27T11:46:01.134063",
+ "port": "/dev/serial/by-id/usb-1a86_USB_Single_Serial_5B90103276-if00",
+ "limits": {
+  "lo": 322,
+  "hi": 3826,
+  "slack": 200
+ },
+ "speed_ticks_s": 400,
+ "pico_start": {
+  "blocked": 24,
+  "hold": 0,
+  "n": 0,
+  "joint": 0,
+  "drop": 0,
+  "fail": 0
+ },
+ "sweep": {
+  "sweeps": 3,
+  "goals_sent": 2617,
+  "min_goal": 322,
+  "max_goal": 3826,
+  "holds": 0,
+  "dropped": 0
+ },
+ "clamp": [
+  {
+   "side": 1,
+   "goal": 4026,
+   "final": 3820,
+   "holds": 0,
+   "pass": true
+  },
+  {
+   "side": -1,
+   "goal": 122,
+   "final": 325,
+   "holds": 0,
+   "pass": true
+  },
+  {
+   "side": 1,
+   "goal": 4026,
+   "final": 3820,
+   "holds": 0,
+   "pass": true
+  },
+  {
+   "side": -1,
+   "goal": 122,
+   "final": 325,
+   "holds": 0,
+   "pass": true
+  },
+  {
+   "side": 1,
+   "goal": 4026,
+   "final": 3820,
+   "holds": 0,
+   "pass": true
+  },
+  {
+   "side": -1,
+   "goal": 122,
+   "final": 325,
+   "holds": 0,
+   "pass": true
+  },
+  {
+   "side": 1,
+   "goal": 4026,
+   "final": 3820,
+   "holds": 0,
+   "pass": true
+  },
+  {
+   "side": -1,
+   "goal": 122,
+   "final": 325,
+   "holds": 0,
+   "pass": true
+  }
+ ],
+ "hold": [
+  {
+   "side": 1,
+   "kind": "slack+1",
+   "goal": 4027,
+   "start": 3783,
+   "max_moved": 0,
+   "hold_counted": true,
+   "dropped": 47,
+   "released": true,
+   "final": 3486,
+   "pass": true
+  },
+  {
+   "side": -1,
+   "kind": "slack+1",
+   "goal": 121,
+   "start": 366,
+   "max_moved": 0,
+   "hold_counted": true,
+   "dropped": 47,
+   "released": true,
+   "final": 661,
+   "pass": true
+  },
+  {
+   "side": 1,
+   "kind": "slack+100",
+   "goal": 4095,
+   "start": 3783,
+   "max_moved": 0,
+   "hold_counted": true,
+   "dropped": 47,
+   "released": true,
+   "final": 3488,
+   "pass": true
+  },
+  {
+   "side": -1,
+   "kind": "slack+100",
+   "goal": 22,
+   "start": 366,
+   "max_moved": 0,
+   "hold_counted": true,
+   "dropped": 47,
+   "released": true,
+   "final": 662,
+   "pass": true
+  },
+  {
+   "side": 1,
+   "kind": "end",
+   "goal": 4095,
+   "start": 3781,
+   "max_moved": 0,
+   "hold_counted": true,
+   "dropped": 47,
+   "released": true,
+   "final": 3484,
+   "pass": true
+  },
+  {
+   "side": -1,
+   "kind": "end",
+   "goal": 0,
+   "start": 366,
+   "max_moved": 0,
+   "hold_counted": true,
+   "dropped": 47,
+   "released": true,
+   "final": 662,
+   "pass": true
+  },
+  {
+   "side": 1,
+   "kind": "slack+1",
+   "goal": 4027,
+   "start": 3783,
+   "max_moved": 0,
+   "hold_counted": true,
+   "dropped": 47,
+   "released": true,
+   "final": 3486,
+   "pass": true
+  },
+  {
+   "side": -1,
+   "kind": "slack+1",
+   "goal": 121,
+   "start": 366,
+   "max_moved": 0,
+   "hold_counted": true,
+   "dropped": 47,
+   "released": true,
+   "final": 661,
+   "pass": true
+  },
+  {
+   "side": 1,
+   "kind": "slack+100",
+   "goal": 4095,
+   "start": 3781,
+   "max_moved": 0,
+   "hold_counted": true,
+   "dropped": 47,
+   "released": true,
+   "final": 3484,
+   "pass": true
+  },
+  {
+   "side": -1,
+   "kind": "slack+100",
+   "goal": 22,
+   "start": 366,
+   "max_moved": 0,
+   "hold_counted": true,
+   "dropped": 47,
+   "released": true,
+   "final": 662,
+   "pass": true
+  },
+  {
+   "side": 1,
+   "kind": "end",
+   "goal": 4095,
+   "start": 3783,
+   "max_moved": 0,
+   "hold_counted": true,
+   "dropped": 47,
+   "released": true,
+   "final": 3486,
+   "pass": true
+  },
+  {
+   "side": -1,
+   "kind": "end",
+   "goal": 0,
+   "start": 366,
+   "max_moved": 0,
+   "hold_counted": true,
+   "dropped": 47,
+   "released": true,
+   "final": 662,
+   "pass": true
+  },
+  {
+   "side": 1,
+   "kind": "slack+1",
+   "goal": 4027,
+   "start": 3783,
+   "max_moved": 0,
+   "hold_counted": true,
+   "dropped": 47,
+   "released": true,
+   "final": 3486,
+   "pass": true
+  },
+  {
+   "side": -1,
+   "kind": "slack+1",
+   "goal": 121,
+   "start": 366,
+   "max_moved": 0,
+   "hold_counted": true,
+   "dropped": 47,
+   "released": true,
+   "final": 662,
+   "pass": true
+  },
+  {
+   "side": 1,
+   "kind": "slack+100",
+   "goal": 4095,
+   "start": 3781,
+   "max_moved": 0,
+   "hold_counted": true,
+   "dropped": 47,
+   "released": true,
+   "final": 3485,
+   "pass": true
+  },
+  {
+   "side": -1,
+   "kind": "slack+100",
+   "goal": 22,
+   "start": 366,
+   "max_moved": 0,
+   "hold_counted": true,
+   "dropped": 47,
+   "released": true,
+   "final": 662,
+   "pass": true
+  },
+  {
+   "side": 1,
+   "kind": "end",
+   "goal": 4095,
+   "start": 3783,
+   "max_moved": 0,
+   "hold_counted": true,
+   "dropped": 47,
+   "released": true,
+   "final": 3486,
+   "pass": true
+  },
+  {
+   "side": -1,
+   "kind": "end",
+   "goal": 0,
+   "start": 366,
+   "max_moved": 0,
+   "hold_counted": true,
+   "dropped": 47,
+   "released": true,
+   "final": 662,
+   "pass": true
+  },
+  {
+   "side": 1,
+   "kind": "slack+1",
+   "goal": 4027,
+   "start": 3783,
+   "max_moved": 0,
+   "hold_counted": true,
+   "dropped": 47,
+   "released": true,
+   "final": 3486,
+   "pass": true
+  },
+  {
+   "side": -1,
+   "kind": "slack+1",
+   "goal": 121,
+   "start": 366,
+   "max_moved": 0,
+   "hold_counted": true,
+   "dropped": 47,
+   "released": true,
+   "final": 661,
+   "pass": true
+  }
+ ],
+ "pico_end": {
+  "blocked": 24,
+  "hold": 0,
+  "n": 20,
+  "joint": 5,
+  "drop": 1420,
+  "fail": 0
+ },
+ "calibration_after": "matches file",
+ "summary": {
+  "attacks_blocked": null,
+  "attacks_tried": null,
+  "holds_passed": 20,
+  "holds_tried": 20,
+  "holds_ci95": [
+   0.8389,
+   1.0
+  ],
+  "clamps_passed": 8,
+  "clamps_tried": 8,
+  "false_holds_in_sweep": 0
+ }
+}

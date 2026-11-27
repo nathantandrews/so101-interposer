@@ -1,0 +1,1251 @@
+{
+ "time": "2026-11-27T10:51:49.956685",
+ "port": "/dev/serial/by-id/usb-1a86_USB_Single_Serial_5B90103276-if00",
+ "limits": {
+  "lo": 341,
+  "hi": 3755,
+  "slack": 80
+ },
+ "speed_ticks_s": 400,
+ "pico_start": {
+  "blocked": 24,
+  "hold": 0,
+  "n": 2,
+  "joint": 5,
+  "drop": 189,
+  "fail": 0
+ },
+ "attacks": {
+  "limit_writes": [
+   {
+    "joint": "shoulder_pan",
+    "register": "Homing_Offset",
+    "before": 1847,
+    "attempted": 0,
+    "after": 1847,
+    "outcome": "unchanged/no-reply",
+    "error": "Failed to write 0 to 'Homing_Offset' of motor ID 1 after 1 tries. Operation timed out",
+    "run": 0
+   },
+   {
+    "joint": "shoulder_pan",
+    "register": "Min_Position_Limit",
+    "before": 738,
+    "attempted": 0,
+    "after": 738,
+    "outcome": "unchanged/no-reply",
+    "error": "Failed to write 0 to 'Min_Position_Limit' of motor ID 1 after 1 tries. Operation timed out",
+    "run": 0
+   },
+   {
+    "joint": "shoulder_pan",
+    "register": "Max_Position_Limit",
+    "before": 3460,
+    "attempted": 4095,
+    "after": 3460,
+    "outcome": "unchanged/no-reply",
+    "error": "Failed to write 4095 to 'Max_Position_Limit' of motor ID 1 after 1 tries. Operation timed out",
+    "run": 0
+   },
+   {
+    "joint": "shoulder_lift",
+    "register": "Homing_Offset",
+    "before": 1770,
+    "attempted": 0,
+    "after": 1770,
+    "outcome": "unchanged/no-reply",
+    "error": "Failed to write 0 to 'Homing_Offset' of motor ID 2 after 1 tries. Operation timed out",
+    "run": 0
+   },
+   {
+    "joint": "shoulder_lift",
+    "register": "Min_Position_Limit",
+    "before": 895,
+    "attempted": 0,
+    "after": 895,
+    "outcome": "unchanged/no-reply",
+    "error": "Failed to write 0 to 'Min_Position_Limit' of motor ID 2 after 1 tries. Operation timed out",
+    "run": 0
+   },
+   {
+    "joint": "shoulder_lift",
+    "register": "Max_Position_Limit",
+    "before": 3175,
+    "attempted": 4095,
+    "after": 3175,
+    "outcome": "unchanged/no-reply",
+    "error": "Failed to write 4095 to 'Max_Position_Limit' of motor ID 2 after 1 tries. Operation timed out",
+    "run": 0
+   },
+   {
+    "joint": "elbow_flex",
+    "register": "Homing_Offset",
+    "before": -907,
+    "attempted": 0,
+    "after": -907,
+    "outcome": "unchanged/no-reply",
+    "error": "Failed to write 0 to 'Homing_Offset' of motor ID 3 after 1 tries. Operation timed out",
+    "run": 0
+   },
+   {
+    "joint": "elbow_flex",
+    "register": "Min_Position_Limit",
+    "before": 808,
+    "attempted": 0,
+    "after": 808,
+    "outcome": "unchanged/no-reply",
+    "error": "Failed to write 0 to 'Min_Position_Limit' of motor ID 3 after 1 tries. Operation timed out",
+    "run": 0
+   },
+   {
+    "joint": "elbow_flex",
+    "register": "Max_Position_Limit",
+    "before": 3031,
+    "attempted": 4095,
+    "after": 3031,
+    "outcome": "unchanged/no-reply",
+    "error": "Failed to write 4095 to 'Max_Position_Limit' of motor ID 3 after 1 tries. Operation timed out",
+    "run": 0
+   },
+   {
+    "joint": "wrist_flex",
+    "register": "Homing_Offset",
+    "before": -1631,
+    "attempted": 0,
+    "after": -1631,
+    "outcome": "unchanged/no-reply",
+    "error": "Failed to write 0 to 'Homing_Offset' of motor ID 4 after 1 tries. Operation timed out",
+    "run": 0
+   },
+   {
+    "joint": "wrist_flex",
+    "register": "Min_Position_Limit",
+    "before": 892,
+    "attempted": 0,
+    "after": 892,
+    "outcome": "unchanged/no-reply",
+    "error": "Failed to write 0 to 'Min_Position_Limit' of motor ID 4 after 1 tries. Operation timed out",
+    "run": 0
+   },
+   {
+    "joint": "wrist_flex",
+    "register": "Max_Position_Limit",
+    "before": 3199,
+    "attempted": 4095,
+    "after": 3199,
+    "outcome": "unchanged/no-reply",
+    "error": "Failed to write 4095 to 'Max_Position_Limit' of motor ID 4 after 1 tries. Operation timed out",
+    "run": 0
+   },
+   {
+    "joint": "wrist_roll",
+    "register": "Homing_Offset",
+    "before": 157,
+    "attempted": 0,
+    "after": 157,
+    "outcome": "unchanged/no-reply",
+    "error": "Failed to write 0 to 'Homing_Offset' of motor ID 5 after 1 tries. Operation timed out",
+    "run": 0
+   },
+   {
+    "joint": "wrist_roll",
+    "register": "Min_Position_Limit",
+    "before": 0,
+    "attempted": 1,
+    "after": 0,
+    "outcome": "unchanged/no-reply",
+    "error": "Failed to write 1 to 'Min_Position_Limit' of motor ID 5 after 1 tries. Operation timed out",
+    "run": 0
+   },
+   {
+    "joint": "wrist_roll",
+    "register": "Max_Position_Limit",
+    "before": 4095,
+    "attempted": 4094,
+    "after": 4095,
+    "outcome": "unchanged/no-reply",
+    "error": "Failed to write 4094 to 'Max_Position_Limit' of motor ID 5 after 1 tries. Operation timed out",
+    "run": 0
+   },
+   {
+    "joint": "gripper",
+    "register": "Homing_Offset",
+    "before": 1603,
+    "attempted": 0,
+    "after": 1603,
+    "outcome": "unchanged/no-reply",
+    "error": "Failed to write 0 to 'Homing_Offset' of motor ID 6 after 1 tries. Operation timed out",
+    "run": 0
+   },
+   {
+    "joint": "gripper",
+    "register": "Min_Position_Limit",
+    "before": 1983,
+    "attempted": 0,
+    "after": 1983,
+    "outcome": "unchanged/no-reply",
+    "error": "Failed to write 0 to 'Min_Position_Limit' of motor ID 6 after 1 tries. Operation timed out",
+    "run": 0
+   },
+   {
+    "joint": "gripper",
+    "register": "Max_Position_Limit",
+    "before": 3475,
+    "attempted": 4095,
+    "after": 3475,
+    "outcome": "unchanged/no-reply",
+    "error": "Failed to write 4095 to 'Max_Position_Limit' of motor ID 6 after 1 tries. Operation timed out",
+    "run": 0
+   },
+   {
+    "joint": "shoulder_pan",
+    "register": "Homing_Offset",
+    "before": 1847,
+    "attempted": 0,
+    "after": 1847,
+    "outcome": "unchanged/no-reply",
+    "error": "Failed to write 0 to 'Homing_Offset' of motor ID 1 after 1 tries. Operation timed out",
+    "run": 1
+   },
+   {
+    "joint": "shoulder_pan",
+    "register": "Min_Position_Limit",
+    "before": 738,
+    "attempted": 0,
+    "after": 738,
+    "outcome": "unchanged/no-reply",
+    "error": "Failed to write 0 to 'Min_Position_Limit' of motor ID 1 after 1 tries. Operation timed out",
+    "run": 1
+   },
+   {
+    "joint": "shoulder_pan",
+    "register": "Max_Position_Limit",
+    "before": 3460,
+    "attempted": 4095,
+    "after": 3460,
+    "outcome": "unchanged/no-reply",
+    "error": "Failed to write 4095 to 'Max_Position_Limit' of motor ID 1 after 1 tries. Operation timed out",
+    "run": 1
+   },
+   {
+    "joint": "shoulder_lift",
+    "register": "Homing_Offset",
+    "before": 1770,
+    "attempted": 0,
+    "after": 1770,
+    "outcome": "unchanged/no-reply",
+    "error": "Failed to write 0 to 'Homing_Offset' of motor ID 2 after 1 tries. Operation timed out",
+    "run": 1
+   },
+   {
+    "joint": "shoulder_lift",
+    "register": "Min_Position_Limit",
+    "before": 895,
+    "attempted": 0,
+    "after": 895,
+    "outcome": "unchanged/no-reply",
+    "error": "Failed to write 0 to 'Min_Position_Limit' of motor ID 2 after 1 tries. Operation timed out",
+    "run": 1
+   },
+   {
+    "joint": "shoulder_lift",
+    "register": "Max_Position_Limit",
+    "before": 3175,
+    "attempted": 4095,
+    "after": 3175,
+    "outcome": "unchanged/no-reply",
+    "error": "Failed to write 4095 to 'Max_Position_Limit' of motor ID 2 after 1 tries. Operation timed out",
+    "run": 1
+   },
+   {
+    "joint": "elbow_flex",
+    "register": "Homing_Offset",
+    "before": -907,
+    "attempted": 0,
+    "after": -907,
+    "outcome": "unchanged/no-reply",
+    "error": "Failed to write 0 to 'Homing_Offset' of motor ID 3 after 1 tries. Operation timed out",
+    "run": 1
+   },
+   {
+    "joint": "elbow_flex",
+    "register": "Min_Position_Limit",
+    "before": 808,
+    "attempted": 0,
+    "after": 808,
+    "outcome": "unchanged/no-reply",
+    "error": "Failed to write 0 to 'Min_Position_Limit' of motor ID 3 after 1 tries. Operation timed out",
+    "run": 1
+   },
+   {
+    "joint": "elbow_flex",
+    "register": "Max_Position_Limit",
+    "before": 3031,
+    "attempted": 4095,
+    "after": 3031,
+    "outcome": "unchanged/no-reply",
+    "error": "Failed to write 4095 to 'Max_Position_Limit' of motor ID 3 after 1 tries. Operation timed out",
+    "run": 1
+   },
+   {
+    "joint": "wrist_flex",
+    "register": "Homing_Offset",
+    "before": -1631,
+    "attempted": 0,
+    "after": -1631,
+    "outcome": "unchanged/no-reply",
+    "error": "Failed to write 0 to 'Homing_Offset' of motor ID 4 after 1 tries. Operation timed out",
+    "run": 1
+   },
+   {
+    "joint": "wrist_flex",
+    "register": "Min_Position_Limit",
+    "before": 892,
+    "attempted": 0,
+    "after": 892,
+    "outcome": "unchanged/no-reply",
+    "error": "Failed to write 0 to 'Min_Position_Limit' of motor ID 4 after 1 tries. Operation timed out",
+    "run": 1
+   },
+   {
+    "joint": "wrist_flex",
+    "register": "Max_Position_Limit",
+    "before": 3199,
+    "attempted": 4095,
+    "after": 3199,
+    "outcome": "unchanged/no-reply",
+    "error": "Failed to write 4095 to 'Max_Position_Limit' of motor ID 4 after 1 tries. Operation timed out",
+    "run": 1
+   },
+   {
+    "joint": "wrist_roll",
+    "register": "Homing_Offset",
+    "before": 157,
+    "attempted": 0,
+    "after": 157,
+    "outcome": "unchanged/no-reply",
+    "error": "Failed to write 0 to 'Homing_Offset' of motor ID 5 after 1 tries. Operation timed out",
+    "run": 1
+   },
+   {
+    "joint": "wrist_roll",
+    "register": "Min_Position_Limit",
+    "before": 0,
+    "attempted": 1,
+    "after": 0,
+    "outcome": "unchanged/no-reply",
+    "error": "Failed to write 1 to 'Min_Position_Limit' of motor ID 5 after 1 tries. Operation timed out",
+    "run": 1
+   },
+   {
+    "joint": "wrist_roll",
+    "register": "Max_Position_Limit",
+    "before": 4095,
+    "attempted": 4094,
+    "after": 4095,
+    "outcome": "unchanged/no-reply",
+    "error": "Failed to write 4094 to 'Max_Position_Limit' of motor ID 5 after 1 tries. Operation timed out",
+    "run": 1
+   },
+   {
+    "joint": "gripper",
+    "register": "Homing_Offset",
+    "before": 1603,
+    "attempted": 0,
+    "after": 1603,
+    "outcome": "unchanged/no-reply",
+    "error": "Failed to write 0 to 'Homing_Offset' of motor ID 6 after 1 tries. Operation timed out",
+    "run": 1
+   },
+   {
+    "joint": "gripper",
+    "register": "Min_Position_Limit",
+    "before": 1983,
+    "attempted": 0,
+    "after": 1983,
+    "outcome": "unchanged/no-reply",
+    "error": "Failed to write 0 to 'Min_Position_Limit' of motor ID 6 after 1 tries. Operation timed out",
+    "run": 1
+   },
+   {
+    "joint": "gripper",
+    "register": "Max_Position_Limit",
+    "before": 3475,
+    "attempted": 4095,
+    "after": 3475,
+    "outcome": "unchanged/no-reply",
+    "error": "Failed to write 4095 to 'Max_Position_Limit' of motor ID 6 after 1 tries. Operation timed out",
+    "run": 1
+   },
+   {
+    "joint": "shoulder_pan",
+    "register": "Homing_Offset",
+    "before": 1847,
+    "attempted": 0,
+    "after": 1847,
+    "outcome": "unchanged/no-reply",
+    "error": "Failed to write 0 to 'Homing_Offset' of motor ID 1 after 1 tries. Operation timed out",
+    "run": 2
+   },
+   {
+    "joint": "shoulder_pan",
+    "register": "Min_Position_Limit",
+    "before": 738,
+    "attempted": 0,
+    "after": 738,
+    "outcome": "unchanged/no-reply",
+    "error": "Failed to write 0 to 'Min_Position_Limit' of motor ID 1 after 1 tries. Operation timed out",
+    "run": 2
+   },
+   {
+    "joint": "shoulder_pan",
+    "register": "Max_Position_Limit",
+    "before": 3460,
+    "attempted": 4095,
+    "after": 3460,
+    "outcome": "unchanged/no-reply",
+    "error": "Failed to write 4095 to 'Max_Position_Limit' of motor ID 1 after 1 tries. Operation timed out",
+    "run": 2
+   },
+   {
+    "joint": "shoulder_lift",
+    "register": "Homing_Offset",
+    "before": 1770,
+    "attempted": 0,
+    "after": 1770,
+    "outcome": "unchanged/no-reply",
+    "error": "Failed to write 0 to 'Homing_Offset' of motor ID 2 after 1 tries. Operation timed out",
+    "run": 2
+   },
+   {
+    "joint": "shoulder_lift",
+    "register": "Min_Position_Limit",
+    "before": 895,
+    "attempted": 0,
+    "after": 895,
+    "outcome": "unchanged/no-reply",
+    "error": "Failed to write 0 to 'Min_Position_Limit' of motor ID 2 after 1 tries. Operation timed out",
+    "run": 2
+   },
+   {
+    "joint": "shoulder_lift",
+    "register": "Max_Position_Limit",
+    "before": 3175,
+    "attempted": 4095,
+    "after": 3175,
+    "outcome": "unchanged/no-reply",
+    "error": "Failed to write 4095 to 'Max_Position_Limit' of motor ID 2 after 1 tries. Operation timed out",
+    "run": 2
+   },
+   {
+    "joint": "elbow_flex",
+    "register": "Homing_Offset",
+    "before": -907,
+    "attempted": 0,
+    "after": -907,
+    "outcome": "unchanged/no-reply",
+    "error": "Failed to write 0 to 'Homing_Offset' of motor ID 3 after 1 tries. Operation timed out",
+    "run": 2
+   },
+   {
+    "joint": "elbow_flex",
+    "register": "Min_Position_Limit",
+    "before": 808,
+    "attempted": 0,
+    "after": 808,
+    "outcome": "unchanged/no-reply",
+    "error": "Failed to write 0 to 'Min_Position_Limit' of motor ID 3 after 1 tries. Operation timed out",
+    "run": 2
+   },
+   {
+    "joint": "elbow_flex",
+    "register": "Max_Position_Limit",
+    "before": 3031,
+    "attempted": 4095,
+    "after": 3031,
+    "outcome": "unchanged/no-reply",
+    "error": "Failed to write 4095 to 'Max_Position_Limit' of motor ID 3 after 1 tries. Operation timed out",
+    "run": 2
+   },
+   {
+    "joint": "wrist_flex",
+    "register": "Homing_Offset",
+    "before": -1631,
+    "attempted": 0,
+    "after": -1631,
+    "outcome": "unchanged/no-reply",
+    "error": "Failed to write 0 to 'Homing_Offset' of motor ID 4 after 1 tries. Operation timed out",
+    "run": 2
+   },
+   {
+    "joint": "wrist_flex",
+    "register": "Min_Position_Limit",
+    "before": 892,
+    "attempted": 0,
+    "after": 892,
+    "outcome": "unchanged/no-reply",
+    "error": "Failed to write 0 to 'Min_Position_Limit' of motor ID 4 after 1 tries. Operation timed out",
+    "run": 2
+   },
+   {
+    "joint": "wrist_flex",
+    "register": "Max_Position_Limit",
+    "before": 3199,
+    "attempted": 4095,
+    "after": 3199,
+    "outcome": "unchanged/no-reply",
+    "error": "Failed to write 4095 to 'Max_Position_Limit' of motor ID 4 after 1 tries. Operation timed out",
+    "run": 2
+   },
+   {
+    "joint": "wrist_roll",
+    "register": "Homing_Offset",
+    "before": 157,
+    "attempted": 0,
+    "after": 157,
+    "outcome": "unchanged/no-reply",
+    "error": "Failed to write 0 to 'Homing_Offset' of motor ID 5 after 1 tries. Operation timed out",
+    "run": 2
+   },
+   {
+    "joint": "wrist_roll",
+    "register": "Min_Position_Limit",
+    "before": 0,
+    "attempted": 1,
+    "after": 0,
+    "outcome": "unchanged/no-reply",
+    "error": "Failed to write 1 to 'Min_Position_Limit' of motor ID 5 after 1 tries. Operation timed out",
+    "run": 2
+   },
+   {
+    "joint": "wrist_roll",
+    "register": "Max_Position_Limit",
+    "before": 4095,
+    "attempted": 4094,
+    "after": 4095,
+    "outcome": "unchanged/no-reply",
+    "error": "Failed to write 4094 to 'Max_Position_Limit' of motor ID 5 after 1 tries. Operation timed out",
+    "run": 2
+   },
+   {
+    "joint": "gripper",
+    "register": "Homing_Offset",
+    "before": 1603,
+    "attempted": 0,
+    "after": 1603,
+    "outcome": "unchanged/no-reply",
+    "error": "Failed to write 0 to 'Homing_Offset' of motor ID 6 after 1 tries. Operation timed out",
+    "run": 2
+   },
+   {
+    "joint": "gripper",
+    "register": "Min_Position_Limit",
+    "before": 1983,
+    "attempted": 0,
+    "after": 1983,
+    "outcome": "unchanged/no-reply",
+    "error": "Failed to write 0 to 'Min_Position_Limit' of motor ID 6 after 1 tries. Operation timed out",
+    "run": 2
+   },
+   {
+    "joint": "gripper",
+    "register": "Max_Position_Limit",
+    "before": 3475,
+    "attempted": 4095,
+    "after": 3475,
+    "outcome": "unchanged/no-reply",
+    "error": "Failed to write 4095 to 'Max_Position_Limit' of motor ID 6 after 1 tries. Operation timed out",
+    "run": 2
+   },
+   {
+    "joint": "shoulder_pan",
+    "register": "Homing_Offset",
+    "before": 1847,
+    "attempted": 0,
+    "after": 1847,
+    "outcome": "unchanged/no-reply",
+    "error": "Failed to write 0 to 'Homing_Offset' of motor ID 1 after 1 tries. Operation timed out",
+    "run": 3
+   },
+   {
+    "joint": "shoulder_pan",
+    "register": "Min_Position_Limit",
+    "before": 738,
+    "attempted": 0,
+    "after": 738,
+    "outcome": "unchanged/no-reply",
+    "error": "Failed to write 0 to 'Min_Position_Limit' of motor ID 1 after 1 tries. Operation timed out",
+    "run": 3
+   },
+   {
+    "joint": "shoulder_pan",
+    "register": "Max_Position_Limit",
+    "before": 3460,
+    "attempted": 4095,
+    "after": 3460,
+    "outcome": "unchanged/no-reply",
+    "error": "Failed to write 4095 to 'Max_Position_Limit' of motor ID 1 after 1 tries. Operation timed out",
+    "run": 3
+   },
+   {
+    "joint": "shoulder_lift",
+    "register": "Homing_Offset",
+    "before": 1770,
+    "attempted": 0,
+    "after": 1770,
+    "outcome": "unchanged/no-reply",
+    "error": "Failed to write 0 to 'Homing_Offset' of motor ID 2 after 1 tries. Operation timed out",
+    "run": 3
+   },
+   {
+    "joint": "shoulder_lift",
+    "register": "Min_Position_Limit",
+    "before": 895,
+    "attempted": 0,
+    "after": 895,
+    "outcome": "unchanged/no-reply",
+    "error": "Failed to write 0 to 'Min_Position_Limit' of motor ID 2 after 1 tries. Operation timed out",
+    "run": 3
+   },
+   {
+    "joint": "shoulder_lift",
+    "register": "Max_Position_Limit",
+    "before": 3175,
+    "attempted": 4095,
+    "after": 3175,
+    "outcome": "unchanged/no-reply",
+    "error": "Failed to write 4095 to 'Max_Position_Limit' of motor ID 2 after 1 tries. Operation timed out",
+    "run": 3
+   },
+   {
+    "joint": "elbow_flex",
+    "register": "Homing_Offset",
+    "before": -907,
+    "attempted": 0,
+    "after": -907,
+    "outcome": "unchanged/no-reply",
+    "error": "Failed to write 0 to 'Homing_Offset' of motor ID 3 after 1 tries. Operation timed out",
+    "run": 3
+   },
+   {
+    "joint": "elbow_flex",
+    "register": "Min_Position_Limit",
+    "before": 808,
+    "attempted": 0,
+    "after": 808,
+    "outcome": "unchanged/no-reply",
+    "error": "Failed to write 0 to 'Min_Position_Limit' of motor ID 3 after 1 tries. Operation timed out",
+    "run": 3
+   },
+   {
+    "joint": "elbow_flex",
+    "register": "Max_Position_Limit",
+    "before": 3031,
+    "attempted": 4095,
+    "after": 3031,
+    "outcome": "unchanged/no-reply",
+    "error": "Failed to write 4095 to 'Max_Position_Limit' of motor ID 3 after 1 tries. Operation timed out",
+    "run": 3
+   },
+   {
+    "joint": "wrist_flex",
+    "register": "Homing_Offset",
+    "before": -1631,
+    "attempted": 0,
+    "after": -1631,
+    "outcome": "unchanged/no-reply",
+    "error": "Failed to write 0 to 'Homing_Offset' of motor ID 4 after 1 tries. Operation timed out",
+    "run": 3
+   },
+   {
+    "joint": "wrist_flex",
+    "register": "Min_Position_Limit",
+    "before": 892,
+    "attempted": 0,
+    "after": 892,
+    "outcome": "unchanged/no-reply",
+    "error": "Failed to write 0 to 'Min_Position_Limit' of motor ID 4 after 1 tries. Operation timed out",
+    "run": 3
+   },
+   {
+    "joint": "wrist_flex",
+    "register": "Max_Position_Limit",
+    "before": 3199,
+    "attempted": 4095,
+    "after": 3199,
+    "outcome": "unchanged/no-reply",
+    "error": "Failed to write 4095 to 'Max_Position_Limit' of motor ID 4 after 1 tries. Operation timed out",
+    "run": 3
+   },
+   {
+    "joint": "wrist_roll",
+    "register": "Homing_Offset",
+    "before": 157,
+    "attempted": 0,
+    "after": 157,
+    "outcome": "unchanged/no-reply",
+    "error": "Failed to write 0 to 'Homing_Offset' of motor ID 5 after 1 tries. Operation timed out",
+    "run": 3
+   },
+   {
+    "joint": "wrist_roll",
+    "register": "Min_Position_Limit",
+    "before": 0,
+    "attempted": 1,
+    "after": 0,
+    "outcome": "unchanged/no-reply",
+    "error": "Failed to write 1 to 'Min_Position_Limit' of motor ID 5 after 1 tries. Operation timed out",
+    "run": 3
+   },
+   {
+    "joint": "wrist_roll",
+    "register": "Max_Position_Limit",
+    "before": 4095,
+    "attempted": 4094,
+    "after": 4095,
+    "outcome": "unchanged/no-reply",
+    "error": "Failed to write 4094 to 'Max_Position_Limit' of motor ID 5 after 1 tries. Operation timed out",
+    "run": 3
+   },
+   {
+    "joint": "gripper",
+    "register": "Homing_Offset",
+    "before": 1603,
+    "attempted": 0,
+    "after": 1603,
+    "outcome": "unchanged/no-reply",
+    "error": "Failed to write 0 to 'Homing_Offset' of motor ID 6 after 1 tries. Operation timed out",
+    "run": 3
+   },
+   {
+    "joint": "gripper",
+    "register": "Min_Position_Limit",
+    "before": 1983,
+    "attempted": 0,
+    "after": 1983,
+    "outcome": "unchanged/no-reply",
+    "error": "Failed to write 0 to 'Min_Position_Limit' of motor ID 6 after 1 tries. Operation timed out",
+    "run": 3
+   },
+   {
+    "joint": "gripper",
+    "register": "Max_Position_Limit",
+    "before": 3475,
+    "attempted": 4095,
+    "after": 3475,
+    "outcome": "unchanged/no-reply",
+    "error": "Failed to write 4095 to 'Max_Position_Limit' of motor ID 6 after 1 tries. Operation timed out",
+    "run": 3
+   },
+   {
+    "joint": "shoulder_pan",
+    "register": "Homing_Offset",
+    "before": 1847,
+    "attempted": 0,
+    "after": 1847,
+    "outcome": "unchanged/no-reply",
+    "error": "Failed to write 0 to 'Homing_Offset' of motor ID 1 after 1 tries. Operation timed out",
+    "run": 4
+   },
+   {
+    "joint": "shoulder_pan",
+    "register": "Min_Position_Limit",
+    "before": 738,
+    "attempted": 0,
+    "after": 738,
+    "outcome": "unchanged/no-reply",
+    "error": "Failed to write 0 to 'Min_Position_Limit' of motor ID 1 after 1 tries. Operation timed out",
+    "run": 4
+   },
+   {
+    "joint": "shoulder_pan",
+    "register": "Max_Position_Limit",
+    "before": 3460,
+    "attempted": 4095,
+    "after": 3460,
+    "outcome": "unchanged/no-reply",
+    "error": "Failed to write 4095 to 'Max_Position_Limit' of motor ID 1 after 1 tries. Operation timed out",
+    "run": 4
+   },
+   {
+    "joint": "shoulder_lift",
+    "register": "Homing_Offset",
+    "before": 1770,
+    "attempted": 0,
+    "after": 1770,
+    "outcome": "unchanged/no-reply",
+    "error": "Failed to write 0 to 'Homing_Offset' of motor ID 2 after 1 tries. Operation timed out",
+    "run": 4
+   },
+   {
+    "joint": "shoulder_lift",
+    "register": "Min_Position_Limit",
+    "before": 895,
+    "attempted": 0,
+    "after": 895,
+    "outcome": "unchanged/no-reply",
+    "error": "Failed to write 0 to 'Min_Position_Limit' of motor ID 2 after 1 tries. Operation timed out",
+    "run": 4
+   },
+   {
+    "joint": "shoulder_lift",
+    "register": "Max_Position_Limit",
+    "before": 3175,
+    "attempted": 4095,
+    "after": 3175,
+    "outcome": "unchanged/no-reply",
+    "error": "Failed to write 4095 to 'Max_Position_Limit' of motor ID 2 after 1 tries. Operation timed out",
+    "run": 4
+   },
+   {
+    "joint": "elbow_flex",
+    "register": "Homing_Offset",
+    "before": -907,
+    "attempted": 0,
+    "after": -907,
+    "outcome": "unchanged/no-reply",
+    "error": "Failed to write 0 to 'Homing_Offset' of motor ID 3 after 1 tries. Operation timed out",
+    "run": 4
+   },
+   {
+    "joint": "elbow_flex",
+    "register": "Min_Position_Limit",
+    "before": 808,
+    "attempted": 0,
+    "after": 808,
+    "outcome": "unchanged/no-reply",
+    "error": "Failed to write 0 to 'Min_Position_Limit' of motor ID 3 after 1 tries. Operation timed out",
+    "run": 4
+   },
+   {
+    "joint": "elbow_flex",
+    "register": "Max_Position_Limit",
+    "before": 3031,
+    "attempted": 4095,
+    "after": 3031,
+    "outcome": "unchanged/no-reply",
+    "error": "Failed to write 4095 to 'Max_Position_Limit' of motor ID 3 after 1 tries. Operation timed out",
+    "run": 4
+   },
+   {
+    "joint": "wrist_flex",
+    "register": "Homing_Offset",
+    "before": -1631,
+    "attempted": 0,
+    "after": -1631,
+    "outcome": "unchanged/no-reply",
+    "error": "Failed to write 0 to 'Homing_Offset' of motor ID 4 after 1 tries. Operation timed out",
+    "run": 4
+   },
+   {
+    "joint": "wrist_flex",
+    "register": "Min_Position_Limit",
+    "before": 892,
+    "attempted": 0,
+    "after": 892,
+    "outcome": "unchanged/no-reply",
+    "error": "Failed to write 0 to 'Min_Position_Limit' of motor ID 4 after 1 tries. Operation timed out",
+    "run": 4
+   },
+   {
+    "joint": "wrist_flex",
+    "register": "Max_Position_Limit",
+    "before": 3199,
+    "attempted": 4095,
+    "after": 3199,
+    "outcome": "unchanged/no-reply",
+    "error": "Failed to write 4095 to 'Max_Position_Limit' of motor ID 4 after 1 tries. Operation timed out",
+    "run": 4
+   },
+   {
+    "joint": "wrist_roll",
+    "register": "Homing_Offset",
+    "before": 157,
+    "attempted": 0,
+    "after": 157,
+    "outcome": "unchanged/no-reply",
+    "error": "Failed to write 0 to 'Homing_Offset' of motor ID 5 after 1 tries. Operation timed out",
+    "run": 4
+   },
+   {
+    "joint": "wrist_roll",
+    "register": "Min_Position_Limit",
+    "before": 0,
+    "attempted": 1,
+    "after": 0,
+    "outcome": "unchanged/no-reply",
+    "error": "Failed to write 1 to 'Min_Position_Limit' of motor ID 5 after 1 tries. Operation timed out",
+    "run": 4
+   },
+   {
+    "joint": "wrist_roll",
+    "register": "Max_Position_Limit",
+    "before": 4095,
+    "attempted": 4094,
+    "after": 4095,
+    "outcome": "unchanged/no-reply",
+    "error": "Failed to write 4094 to 'Max_Position_Limit' of motor ID 5 after 1 tries. Operation timed out",
+    "run": 4
+   },
+   {
+    "joint": "gripper",
+    "register": "Homing_Offset",
+    "before": 1603,
+    "attempted": 0,
+    "after": 1603,
+    "outcome": "unchanged/no-reply",
+    "error": "Failed to write 0 to 'Homing_Offset' of motor ID 6 after 1 tries. Operation timed out",
+    "run": 4
+   },
+   {
+    "joint": "gripper",
+    "register": "Min_Position_Limit",
+    "before": 1983,
+    "attempted": 0,
+    "after": 1983,
+    "outcome": "unchanged/no-reply",
+    "error": "Failed to write 0 to 'Min_Position_Limit' of motor ID 6 after 1 tries. Operation timed out",
+    "run": 4
+   },
+   {
+    "joint": "gripper",
+    "register": "Max_Position_Limit",
+    "before": 3475,
+    "attempted": 4095,
+    "after": 3475,
+    "outcome": "unchanged/no-reply",
+    "error": "Failed to write 4095 to 'Max_Position_Limit' of motor ID 6 after 1 tries. Operation timed out",
+    "run": 4
+   }
+  ],
+  "torque_writes": [
+   {
+    "run": 0,
+    "joint": "shoulder_pan",
+    "register": "Torque_Limit",
+    "before": 1000,
+    "attempted": 999,
+    "after": 1000,
+    "outcome": "unchanged/no-reply",
+    "error": "Failed to write 999 to 'Torque_Limit' of motor ID 1 after 1 tries. Operation timed out"
+   },
+   {
+    "run": 0,
+    "joint": "shoulder_lift",
+    "register": "Torque_Limit",
+    "before": 1000,
+    "attempted": 999,
+    "after": 1000,
+    "outcome": "unchanged/no-reply",
+    "error": "Failed to write 999 to 'Torque_Limit' of motor ID 2 after 1 tries. Operation timed out"
+   },
+   {
+    "run": 0,
+    "joint": "elbow_flex",
+    "register": "Torque_Limit",
+    "before": 1000,
+    "attempted": 999,
+    "after": 1000,
+    "outcome": "unchanged/no-reply",
+    "error": "Failed to write 999 to 'Torque_Limit' of motor ID 3 after 1 tries. Operation timed out"
+   },
+   {
+    "run": 0,
+    "joint": "wrist_flex",
+    "register": "Torque_Limit",
+    "before": 1000,
+    "attempted": 999,
+    "after": 1000,
+    "outcome": "unchanged/no-reply",
+    "error": "Failed to write 999 to 'Torque_Limit' of motor ID 4 after 1 tries. Operation timed out"
+   },
+   {
+    "run": 0,
+    "joint": "wrist_roll",
+    "register": "Torque_Limit",
+    "before": 1000,
+    "attempted": 999,
+    "after": 1000,
+    "outcome": "unchanged/no-reply",
+    "error": "Failed to write 999 to 'Torque_Limit' of motor ID 5 after 1 tries. Operation timed out"
+   },
+   {
+    "run": 0,
+    "joint": "gripper",
+    "register": "Torque_Limit",
+    "before": 500,
+    "attempted": 499,
+    "after": 500,
+    "outcome": "unchanged/no-reply",
+    "error": "Failed to write 499 to 'Torque_Limit' of motor ID 6 after 1 tries. Operation timed out"
+   },
+   {
+    "run": 1,
+    "joint": "shoulder_pan",
+    "register": "Torque_Limit",
+    "before": 1000,
+    "attempted": 999,
+    "after": 1000,
+    "outcome": "unchanged/no-reply",
+    "error": "Failed to write 999 to 'Torque_Limit' of motor ID 1 after 1 tries. Operation timed out"
+   },
+   {
+    "run": 1,
+    "joint": "shoulder_lift",
+    "register": "Torque_Limit",
+    "before": 1000,
+    "attempted": 999,
+    "after": 1000,
+    "outcome": "unchanged/no-reply",
+    "error": "Failed to write 999 to 'Torque_Limit' of motor ID 2 after 1 tries. Operation timed out"
+   },
+   {
+    "run": 1,
+    "joint": "elbow_flex",
+    "register": "Torque_Limit",
+    "before": 1000,
+    "attempted": 999,
+    "after": 1000,
+    "outcome": "unchanged/no-reply",
+    "error": "Failed to write 999 to 'Torque_Limit' of motor ID 3 after 1 tries. Operation timed out"
+   },
+   {
+    "run": 1,
+    "joint": "wrist_flex",
+    "register": "Torque_Limit",
+    "before": 1000,
+    "attempted": 999,
+    "after": 1000,
+    "outcome": "unchanged/no-reply",
+    "error": "Failed to write 999 to 'Torque_Limit' of motor ID 4 after 1 tries. Operation timed out"
+   },
+   {
+    "run": 1,
+    "joint": "wrist_roll",
+    "register": "Torque_Limit",
+    "before": 1000,
+    "attempted": 999,
+    "after": 1000,
+    "outcome": "unchanged/no-reply",
+    "error": "Failed to write 999 to 'Torque_Limit' of motor ID 5 after 1 tries. Operation timed out"
+   },
+   {
+    "run": 1,
+    "joint": "gripper",
+    "register": "Torque_Limit",
+    "before": 500,
+    "attempted": 499,
+    "after": 500,
+    "outcome": "unchanged/no-reply",
+    "error": "Failed to write 499 to 'Torque_Limit' of motor ID 6 after 1 tries. Operation timed out"
+   },
+   {
+    "run": 2,
+    "joint": "shoulder_pan",
+    "register": "Torque_Limit",
+    "before": 1000,
+    "attempted": 999,
+    "after": 1000,
+    "outcome": "unchanged/no-reply",
+    "error": "Failed to write 999 to 'Torque_Limit' of motor ID 1 after 1 tries. Operation timed out"
+   },
+   {
+    "run": 2,
+    "joint": "shoulder_lift",
+    "register": "Torque_Limit",
+    "before": 1000,
+    "attempted": 999,
+    "after": 1000,
+    "outcome": "unchanged/no-reply",
+    "error": "Failed to write 999 to 'Torque_Limit' of motor ID 2 after 1 tries. Operation timed out"
+   },
+   {
+    "run": 2,
+    "joint": "elbow_flex",
+    "register": "Torque_Limit",
+    "before": 1000,
+    "attempted": 999,
+    "after": 1000,
+    "outcome": "unchanged/no-reply",
+    "error": "Failed to write 999 to 'Torque_Limit' of motor ID 3 after 1 tries. Operation timed out"
+   },
+   {
+    "run": 2,
+    "joint": "wrist_flex",
+    "register": "Torque_Limit",
+    "before": 1000,
+    "attempted": 999,
+    "after": 1000,
+    "outcome": "unchanged/no-reply",
+    "error": "Failed to write 999 to 'Torque_Limit' of motor ID 4 after 1 tries. Operation timed out"
+   },
+   {
+    "run": 2,
+    "joint": "wrist_roll",
+    "register": "Torque_Limit",
+    "before": 1000,
+    "attempted": 999,
+    "after": 1000,
+    "outcome": "unchanged/no-reply",
+    "error": "Failed to write 999 to 'Torque_Limit' of motor ID 5 after 1 tries. Operation timed out"
+   },
+   {
+    "run": 2,
+    "joint": "gripper",
+    "register": "Torque_Limit",
+    "before": 500,
+    "attempted": 499,
+    "after": 500,
+    "outcome": "unchanged/no-reply",
+    "error": "Failed to write 499 to 'Torque_Limit' of motor ID 6 after 1 tries. Operation timed out"
+   },
+   {
+    "run": 3,
+    "joint": "shoulder_pan",
+    "register": "Torque_Limit",
+    "before": 1000,
+    "attempted": 999,
+    "after": 1000,
+    "outcome": "unchanged/no-reply",
+    "error": "Failed to write 999 to 'Torque_Limit' of motor ID 1 after 1 tries. Operation timed out"
+   },
+   {
+    "run": 3,
+    "joint": "shoulder_lift",
+    "register": "Torque_Limit",
+    "before": 1000,
+    "attempted": 999,
+    "after": 1000,
+    "outcome": "unchanged/no-reply",
+    "error": "Failed to write 999 to 'Torque_Limit' of motor ID 2 after 1 tries. Operation timed out"
+   },
+   {
+    "run": 3,
+    "joint": "elbow_flex",
+    "register": "Torque_Limit",
+    "before": 1000,
+    "attempted": 999,
+    "after": 1000,
+    "outcome": "unchanged/no-reply",
+    "error": "Failed to write 999 to 'Torque_Limit' of motor ID 3 after 1 tries. Operation timed out"
+   },
+   {
+    "run": 3,
+    "joint": "wrist_flex",
+    "register": "Torque_Limit",
+    "before": 1000,
+    "attempted": 999,
+    "after": 1000,
+    "outcome": "unchanged/no-reply",
+    "error": "Failed to write 999 to 'Torque_Limit' of motor ID 4 after 1 tries. Operation timed out"
+   },
+   {
+    "run": 3,
+    "joint": "wrist_roll",
+    "register": "Torque_Limit",
+    "before": 1000,
+    "attempted": 999,
+    "after": 1000,
+    "outcome": "unchanged/no-reply",
+    "error": "Failed to write 999 to 'Torque_Limit' of motor ID 5 after 1 tries. Operation timed out"
+   },
+   {
+    "run": 3,
+    "joint": "gripper",
+    "register": "Torque_Limit",
+    "before": 500,
+    "attempted": 499,
+    "after": 500,
+    "outcome": "unchanged/no-reply",
+    "error": "Failed to write 499 to 'Torque_Limit' of motor ID 6 after 1 tries. Operation timed out"
+   },
+   {
+    "run": 4,
+    "joint": "shoulder_pan",
+    "register": "Torque_Limit",
+    "before": 1000,
+    "attempted": 999,
+    "after": 1000,
+    "outcome": "unchanged/no-reply",
+    "error": "Failed to write 999 to 'Torque_Limit' of motor ID 1 after 1 tries. Operation timed out"
+   },
+   {
+    "run": 4,
+    "joint": "shoulder_lift",
+    "register": "Torque_Limit",
+    "before": 1000,
+    "attempted": 999,
+    "after": 1000,
+    "outcome": "unchanged/no-reply",
+    "error": "Failed to write 999 to 'Torque_Limit' of motor ID 2 after 1 tries. Operation timed out"
+   },
+   {
+    "run": 4,
+    "joint": "elbow_flex",
+    "register": "Torque_Limit",
+    "before": 1000,
+    "attempted": 999,
+    "after": 1000,
+    "outcome": "unchanged/no-reply",
+    "error": "Failed to write 999 to 'Torque_Limit' of motor ID 3 after 1 tries. Operation timed out"
+   },
+   {
+    "run": 4,
+    "joint": "wrist_flex",
+    "register": "Torque_Limit",
+    "before": 1000,
+    "attempted": 999,
+    "after": 1000,
+    "outcome": "unchanged/no-reply",
+    "error": "Failed to write 999 to 'Torque_Limit' of motor ID 4 after 1 tries. Operation timed out"
+   },
+   {
+    "run": 4,
+    "joint": "wrist_roll",
+    "register": "Torque_Limit",
+    "before": 1000,
+    "attempted": 999,
+    "after": 1000,
+    "outcome": "unchanged/no-reply",
+    "error": "Failed to write 999 to 'Torque_Limit' of motor ID 5 after 1 tries. Operation timed out"
+   },
+   {
+    "run": 4,
+    "joint": "gripper",
+    "register": "Torque_Limit",
+    "before": 500,
+    "attempted": 499,
+    "after": 500,
+    "outcome": "unchanged/no-reply",
+    "error": "Failed to write 499 to 'Torque_Limit' of motor ID 6 after 1 tries. Operation timed out"
+   }
+  ],
+  "tried": 120,
+  "blocked": 120,
+  "blocked_ci95": [
+   0.969,
+   1.0
+  ],
+  "pico_blocked_delta": 120
+ },
+ "aborted": "wrist lag: goal 3115, at 2912",
+ "pico_end": {
+  "blocked": 144,
+  "hold": 0,
+  "n": 2,
+  "joint": 5,
+  "drop": 189,
+  "fail": 0
+ },
+ "calibration_after": "matches file",
+ "summary": {
+  "attacks_blocked": 120,
+  "attacks_tried": 120,
+  "holds_passed": 0,
+  "holds_tried": 0,
+  "holds_ci95": null,
+  "clamps_passed": 0,
+  "clamps_tried": 0,
+  "false_holds_in_sweep": null
+ }
+}
