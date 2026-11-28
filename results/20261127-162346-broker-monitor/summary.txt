@@ -1,0 +1,14 @@
+firmware: monitor   Fri Nov 27 04:23:46 PM PST 2026
+broker running as root, pid 182927: /tmp/so101-follower -> real port
+
+== unprivileged attacker (uid 1000, groups: none)
+open real port:   PermissionError: [Errno 13] Permission denied: '/dev/serial/by-id/usb-1a86_USB_Single_Serial_5B90103276-if00'
+kill broker:      kill: sending signal to 182927 failed: Operation not permitted
+18 limit writes through broker: 18 writes tried: 0 registers changed, 18 blocked (no reply, unchanged)
+broker: fwd 29  replies 396B  bad 0  BLOCKED 7 last=write id=3 ins=0x03 addr=31  HOLD 0 n=0 drop=0 clamp=0
+
+== root attacker
+kill broker:      KILLED
+18 limit writes straight to the port: 18 writes tried: 0 registers changed, 18 blocked (no reply, unchanged)
+
+saved /home/nathan/Code/school/so101-interposer/results/20261127-162346-broker-monitor

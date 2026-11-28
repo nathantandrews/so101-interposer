@@ -1,0 +1,33 @@
+Backup: /home/nathan/Code/school/so101-interposer/results/20261127-175848-broker-passthrough/20261127-175854-separate/backup.json
+Torque will go OFF. Support the arm, then press Enter (Ctrl-C to quit). shoulder_pan   Homing_Offset         1852 -> tried 0     now 0     changed/ack
+shoulder_pan   Min_Position_Limit     728 -> tried 0     now 0     changed/ack
+shoulder_pan   Max_Position_Limit    3472 -> tried 4095  now 4095  changed/ack
+shoulder_lift  Homing_Offset         1846 -> tried 0     now 0     changed/ack
+shoulder_lift  Min_Position_Limit     802 -> tried 0     now 0     changed/ack
+shoulder_lift  Max_Position_Limit    3192 -> tried 4095  now 4095  changed/ack
+elbow_flex     Homing_Offset        -1014 -> tried 0     now 0     changed/ack
+elbow_flex     Min_Position_Limit     916 -> tried 0     now 0     changed/ack
+elbow_flex     Max_Position_Limit    3128 -> tried 4095  now 4095  changed/ack
+wrist_flex     Homing_Offset        -1544 -> tried 0     now 0     changed/ack
+wrist_flex     Min_Position_Limit     794 -> tried 0     now 0     changed/ack
+wrist_flex     Max_Position_Limit    2848 -> tried 4095  now 4095  changed/ack
+wrist_roll     Homing_Offset         -936 -> tried 0     now 0     changed/ack
+wrist_roll     Min_Position_Limit       0 -> tried 1     now 1     changed/ack
+wrist_roll     Max_Position_Limit    4095 -> tried 4094  now 4094  changed/ack
+gripper        Homing_Offset         1550 -> tried 0     now 0     changed/ack
+gripper        Min_Position_Limit    2034 -> tried 0     now 0     changed/ack
+gripper        Max_Position_Limit    3549 -> tried 4095  now 4095  changed/ack
+
+restore: verified, all registers match the backup
+
+joint             min before->after    max before->after   offset before->after
+shoulder_pan           728 -> 0            3472 -> 4095           1852 -> 0    
+shoulder_lift          802 -> 0            3192 -> 4095           1846 -> 0    
+elbow_flex             916 -> 0            3128 -> 4095          -1014 -> 0    
+wrist_flex             794 -> 0            2848 -> 4095          -1544 -> 0    
+wrist_roll               0 -> 1            4095 -> 4094           -936 -> 0    
+gripper               2034 -> 0            3549 -> 4095           1550 -> 0    
+
+Limits changed on 6 joints: shoulder_pan, shoulder_lift, elbow_flex, wrist_flex, wrist_roll, gripper
+18 writes tried: 18 registers changed, 0 blocked (no reply, unchanged)
+Saved /home/nathan/Code/school/so101-interposer/results/20261127-175848-broker-passthrough/20261127-175854-separate/result.json

@@ -1,0 +1,4 @@
+broker pid 194144 uid 0: /tmp/so101-follower -> /dev/pts/6 -> /dev/serial/by-id/usb-1a86_USB_Single_Serial_5B90103276-if00
+fwd 30  replies 404B  bad 0  BLOCKED 8 last=write id=3 ins=0x03 addr=9  HOLD 0 n=0 drop=0 clamp=0
+fwd 59  replies 852B  bad 0  BLOCKED 18 last=write id=6 ins=0x03 addr=11  HOLD 0 n=0 drop=0 clamp=0
+fwd 59  replies 852B  bad 0  BLOCKED 18 last=write id=6 ins=0x03 addr=11  HOLD 0 n=0 drop=0 clamp=0

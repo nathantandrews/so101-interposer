@@ -1,0 +1,33 @@
+Backup: /home/nathan/Code/school/so101-interposer/results/20261127-162346-broker-monitor/20261127-162351-separate/backup.json
+Torque will go OFF. Support the arm, then press Enter (Ctrl-C to quit). shoulder_pan   Homing_Offset         1852 -> tried 0     now 1852  unchanged/no-reply
+shoulder_pan   Min_Position_Limit     728 -> tried 0     now 728   unchanged/no-reply
+shoulder_pan   Max_Position_Limit    3472 -> tried 4095  now 3472  unchanged/no-reply
+shoulder_lift  Homing_Offset         1846 -> tried 0     now 1846  unchanged/no-reply
+shoulder_lift  Min_Position_Limit     802 -> tried 0     now 802   unchanged/no-reply
+shoulder_lift  Max_Position_Limit    3192 -> tried 4095  now 3192  unchanged/no-reply
+elbow_flex     Homing_Offset        -1014 -> tried 0     now -1014 unchanged/no-reply
+elbow_flex     Min_Position_Limit     916 -> tried 0     now 916   unchanged/no-reply
+elbow_flex     Max_Position_Limit    3128 -> tried 4095  now 3128  unchanged/no-reply
+wrist_flex     Homing_Offset        -1544 -> tried 0     now -1544 unchanged/no-reply
+wrist_flex     Min_Position_Limit     794 -> tried 0     now 794   unchanged/no-reply
+wrist_flex     Max_Position_Limit    2848 -> tried 4095  now 2848  unchanged/no-reply
+wrist_roll     Homing_Offset         -936 -> tried 0     now -936  unchanged/no-reply
+wrist_roll     Min_Position_Limit       0 -> tried 1     now 0     unchanged/no-reply
+wrist_roll     Max_Position_Limit    4095 -> tried 4094  now 4095  unchanged/no-reply
+gripper        Homing_Offset         1550 -> tried 0     now 1550  unchanged/no-reply
+gripper        Min_Position_Limit    2034 -> tried 0     now 2034  unchanged/no-reply
+gripper        Max_Position_Limit    3549 -> tried 4095  now 3549  unchanged/no-reply
+
+restore: verified, all registers match the backup
+
+joint             min before->after    max before->after   offset before->after
+shoulder_pan           728 -> 728          3472 -> 3472           1852 -> 1852 
+shoulder_lift          802 -> 802          3192 -> 3192           1846 -> 1846 
+elbow_flex             916 -> 916          3128 -> 3128          -1014 -> -1014
+wrist_flex             794 -> 794          2848 -> 2848          -1544 -> -1544
+wrist_roll               0 -> 0            4095 -> 4095           -936 -> -936 
+gripper               2034 -> 2034         3549 -> 3549           1550 -> 1550 
+
+Limits changed on 0 joints: none
+18 writes tried: 0 registers changed, 18 blocked (no reply, unchanged)
+Saved /home/nathan/Code/school/so101-interposer/results/20261127-162346-broker-monitor/20261127-162351-separate/result.json

@@ -32,7 +32,7 @@ r=$(unpriv kill -9 "$bpid" 2>&1) || true;                                      l
 yes '' | unpriv "$BIN/python" "$ROOT/tests/vuln_limits.py" "$link" --separate --label "broker-unpriv-$fw" \
   --cal-file "$cal" --out "$out" | tee "$out/unpriv.txt" | grep -E "writes tried|Limits changed" || true
 log "18 limit writes through broker: $(grep 'writes tried' "$out/unpriv.txt")"
-log "broker: $(tail -1 "$out/broker.log")"
+sleep 1.5; log "broker: $(tail -1 "$out/broker.log")"
 
 log ""; log "== root attacker"
 sudo kill "$bpid"; sleep 0.5

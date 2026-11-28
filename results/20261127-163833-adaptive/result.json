@@ -1,0 +1,3185 @@
+{
+ "time": "2026-11-27T16:44:17.849720",
+ "label": "passthrough",
+ "port": "/dev/serial/by-id/usb-1a86_USB_Single_Serial_5B90103276-if00",
+ "runs": 3,
+ "summary": {
+  "trials": 156,
+  "changed": 138,
+  "blocked": 18,
+  "by_form": {
+   "write": {
+    "changed": 18,
+    "tried": 18
+   },
+   "reg_write+action": {
+    "changed": 18,
+    "tried": 18
+   },
+   "span_min_max": {
+    "changed": 18,
+    "tried": 18
+   },
+   "span_from_allowed": {
+    "changed": 18,
+    "tried": 18
+   },
+   "smuggled_after_read": {
+    "changed": 0,
+    "tried": 18
+   },
+   "byte_drip": {
+    "changed": 18,
+    "tried": 18
+   },
+   "extra_header_byte": {
+    "changed": 18,
+    "tried": 18
+   },
+   "torque_write": {
+    "changed": 18,
+    "tried": 18
+   },
+   "broadcast_write": {
+    "changed": 3,
+    "tried": 3
+   },
+   "sync_write_limits": {
+    "changed": 3,
+    "tried": 3
+   },
+   "sync_write_torque": {
+    "changed": 3,
+    "tried": 3
+   },
+   "sync_goal_span_speed": {
+    "changed": 3,
+    "tried": 3
+   }
+  },
+  "pico_blocked_delta": null,
+  "restore_left": []
+ },
+ "trials": [
+  {
+   "run": 0,
+   "form": "write",
+   "target": 1,
+   "changed": true,
+   "checks": [
+    {
+     "id": 1,
+     "register": "Max_Position_Limit",
+     "before": 3472,
+     "attempted": 3471,
+     "after": 3471,
+     "changed": true
+    }
+   ]
+  },
+  {
+   "run": 0,
+   "form": "write",
+   "target": 2,
+   "changed": true,
+   "checks": [
+    {
+     "id": 2,
+     "register": "Max_Position_Limit",
+     "before": 3192,
+     "attempted": 3191,
+     "after": 3191,
+     "changed": true
+    }
+   ]
+  },
+  {
+   "run": 0,
+   "form": "write",
+   "target": 3,
+   "changed": true,
+   "checks": [
+    {
+     "id": 3,
+     "register": "Max_Position_Limit",
+     "before": 3128,
+     "attempted": 3127,
+     "after": 3127,
+     "changed": true
+    }
+   ]
+  },
+  {
+   "run": 0,
+   "form": "write",
+   "target": 4,
+   "changed": true,
+   "checks": [
+    {
+     "id": 4,
+     "register": "Max_Position_Limit",
+     "before": 2848,
+     "attempted": 2847,
+     "after": 2847,
+     "changed": true
+    }
+   ]
+  },
+  {
+   "run": 0,
+   "form": "write",
+   "target": 5,
+   "changed": true,
+   "checks": [
+    {
+     "id": 5,
+     "register": "Max_Position_Limit",
+     "before": 4095,
+     "attempted": 4094,
+     "after": 4094,
+     "changed": true
+    }
+   ]
+  },
+  {
+   "run": 0,
+   "form": "write",
+   "target": 6,
+   "changed": true,
+   "checks": [
+    {
+     "id": 6,
+     "register": "Max_Position_Limit",
+     "before": 3549,
+     "attempted": 3548,
+     "after": 3548,
+     "changed": true
+    }
+   ]
+  },
+  {
+   "run": 0,
+   "form": "reg_write+action",
+   "target": 1,
+   "changed": true,
+   "checks": [
+    {
+     "id": 1,
+     "register": "Max_Position_Limit",
+     "before": 3472,
+     "attempted": 3471,
+     "after": 3471,
+     "changed": true
+    }
+   ]
+  },
+  {
+   "run": 0,
+   "form": "reg_write+action",
+   "target": 2,
+   "changed": true,
+   "checks": [
+    {
+     "id": 2,
+     "register": "Max_Position_Limit",
+     "before": 3192,
+     "attempted": 3191,
+     "after": 3191,
+     "changed": true
+    }
+   ]
+  },
+  {
+   "run": 0,
+   "form": "reg_write+action",
+   "target": 3,
+   "changed": true,
+   "checks": [
+    {
+     "id": 3,
+     "register": "Max_Position_Limit",
+     "before": 3128,
+     "attempted": 3127,
+     "after": 3127,
+     "changed": true
+    }
+   ]
+  },
+  {
+   "run": 0,
+   "form": "reg_write+action",
+   "target": 4,
+   "changed": true,
+   "checks": [
+    {
+     "id": 4,
+     "register": "Max_Position_Limit",
+     "before": 2848,
+     "attempted": 2847,
+     "after": 2847,
+     "changed": true
+    }
+   ]
+  },
+  {
+   "run": 0,
+   "form": "reg_write+action",
+   "target": 5,
+   "changed": true,
+   "checks": [
+    {
+     "id": 5,
+     "register": "Max_Position_Limit",
+     "before": 4095,
+     "attempted": 4094,
+     "after": 4094,
+     "changed": true
+    }
+   ]
+  },
+  {
+   "run": 0,
+   "form": "reg_write+action",
+   "target": 6,
+   "changed": true,
+   "checks": [
+    {
+     "id": 6,
+     "register": "Max_Position_Limit",
+     "before": 3549,
+     "attempted": 3548,
+     "after": 3548,
+     "changed": true
+    }
+   ]
+  },
+  {
+   "run": 0,
+   "form": "span_min_max",
+   "target": 1,
+   "changed": true,
+   "checks": [
+    {
+     "id": 1,
+     "register": "Min_Position_Limit",
+     "before": 728,
+     "attempted": 729,
+     "after": 729,
+     "changed": true
+    },
+    {
+     "id": 1,
+     "register": "Max_Position_Limit",
+     "before": 3472,
+     "attempted": 3471,
+     "after": 3471,
+     "changed": true
+    }
+   ]
+  },
+  {
+   "run": 0,
+   "form": "span_min_max",
+   "target": 2,
+   "changed": true,
+   "checks": [
+    {
+     "id": 2,
+     "register": "Min_Position_Limit",
+     "before": 802,
+     "attempted": 803,
+     "after": 803,
+     "changed": true
+    },
+    {
+     "id": 2,
+     "register": "Max_Position_Limit",
+     "before": 3192,
+     "attempted": 3191,
+     "after": 3191,
+     "changed": true
+    }
+   ]
+  },
+  {
+   "run": 0,
+   "form": "span_min_max",
+   "target": 3,
+   "changed": true,
+   "checks": [
+    {
+     "id": 3,
+     "register": "Min_Position_Limit",
+     "before": 916,
+     "attempted": 917,
+     "after": 917,
+     "changed": true
+    },
+    {
+     "id": 3,
+     "register": "Max_Position_Limit",
+     "before": 3128,
+     "attempted": 3127,
+     "after": 3127,
+     "changed": true
+    }
+   ]
+  },
+  {
+   "run": 0,
+   "form": "span_min_max",
+   "target": 4,
+   "changed": true,
+   "checks": [
+    {
+     "id": 4,
+     "register": "Min_Position_Limit",
+     "before": 794,
+     "attempted": 795,
+     "after": 795,
+     "changed": true
+    },
+    {
+     "id": 4,
+     "register": "Max_Position_Limit",
+     "before": 2848,
+     "attempted": 2847,
+     "after": 2847,
+     "changed": true
+    }
+   ]
+  },
+  {
+   "run": 0,
+   "form": "span_min_max",
+   "target": 5,
+   "changed": true,
+   "checks": [
+    {
+     "id": 5,
+     "register": "Min_Position_Limit",
+     "before": 0,
+     "attempted": 1,
+     "after": 1,
+     "changed": true
+    },
+    {
+     "id": 5,
+     "register": "Max_Position_Limit",
+     "before": 4095,
+     "attempted": 4094,
+     "after": 4094,
+     "changed": true
+    }
+   ]
+  },
+  {
+   "run": 0,
+   "form": "span_min_max",
+   "target": 6,
+   "changed": true,
+   "checks": [
+    {
+     "id": 6,
+     "register": "Min_Position_Limit",
+     "before": 2034,
+     "attempted": 2035,
+     "after": 2035,
+     "changed": true
+    },
+    {
+     "id": 6,
+     "register": "Max_Position_Limit",
+     "before": 3549,
+     "attempted": 3548,
+     "after": 3548,
+     "changed": true
+    }
+   ]
+  },
+  {
+   "run": 0,
+   "form": "span_from_allowed",
+   "target": 1,
+   "changed": true,
+   "checks": [
+    {
+     "id": 1,
+     "register": "Max_Position_Limit",
+     "before": 3472,
+     "attempted": 3471,
+     "after": 3471,
+     "changed": true
+    }
+   ]
+  },
+  {
+   "run": 0,
+   "form": "span_from_allowed",
+   "target": 2,
+   "changed": true,
+   "checks": [
+    {
+     "id": 2,
+     "register": "Max_Position_Limit",
+     "before": 3192,
+     "attempted": 3191,
+     "after": 3191,
+     "changed": true
+    }
+   ]
+  },
+  {
+   "run": 0,
+   "form": "span_from_allowed",
+   "target": 3,
+   "changed": true,
+   "checks": [
+    {
+     "id": 3,
+     "register": "Max_Position_Limit",
+     "before": 3128,
+     "attempted": 3127,
+     "after": 3127,
+     "changed": true
+    }
+   ]
+  },
+  {
+   "run": 0,
+   "form": "span_from_allowed",
+   "target": 4,
+   "changed": true,
+   "checks": [
+    {
+     "id": 4,
+     "register": "Max_Position_Limit",
+     "before": 2848,
+     "attempted": 2847,
+     "after": 2847,
+     "changed": true
+    }
+   ]
+  },
+  {
+   "run": 0,
+   "form": "span_from_allowed",
+   "target": 5,
+   "changed": true,
+   "checks": [
+    {
+     "id": 5,
+     "register": "Max_Position_Limit",
+     "before": 4095,
+     "attempted": 4094,
+     "after": 4094,
+     "changed": true
+    }
+   ]
+  },
+  {
+   "run": 0,
+   "form": "span_from_allowed",
+   "target": 6,
+   "changed": true,
+   "checks": [
+    {
+     "id": 6,
+     "register": "Max_Position_Limit",
+     "before": 3549,
+     "attempted": 3548,
+     "after": 3548,
+     "changed": true
+    }
+   ]
+  },
+  {
+   "run": 0,
+   "form": "smuggled_after_read",
+   "target": 1,
+   "changed": false,
+   "checks": [
+    {
+     "id": 1,
+     "register": "Max_Position_Limit",
+     "before": 3472,
+     "attempted": 3471,
+     "after": 3472,
+     "changed": false
+    }
+   ]
+  },
+  {
+   "run": 0,
+   "form": "smuggled_after_read",
+   "target": 2,
+   "changed": false,
+   "checks": [
+    {
+     "id": 2,
+     "register": "Max_Position_Limit",
+     "before": 3192,
+     "attempted": 3191,
+     "after": 3192,
+     "changed": false
+    }
+   ]
+  },
+  {
+   "run": 0,
+   "form": "smuggled_after_read",
+   "target": 3,
+   "changed": false,
+   "checks": [
+    {
+     "id": 3,
+     "register": "Max_Position_Limit",
+     "before": 3128,
+     "attempted": 3127,
+     "after": 3128,
+     "changed": false
+    }
+   ]
+  },
+  {
+   "run": 0,
+   "form": "smuggled_after_read",
+   "target": 4,
+   "changed": false,
+   "checks": [
+    {
+     "id": 4,
+     "register": "Max_Position_Limit",
+     "before": 2848,
+     "attempted": 2847,
+     "after": 2848,
+     "changed": false
+    }
+   ]
+  },
+  {
+   "run": 0,
+   "form": "smuggled_after_read",
+   "target": 5,
+   "changed": false,
+   "checks": [
+    {
+     "id": 5,
+     "register": "Max_Position_Limit",
+     "before": 4095,
+     "attempted": 4094,
+     "after": 4095,
+     "changed": false
+    }
+   ]
+  },
+  {
+   "run": 0,
+   "form": "smuggled_after_read",
+   "target": 6,
+   "changed": false,
+   "checks": [
+    {
+     "id": 6,
+     "register": "Max_Position_Limit",
+     "before": 3549,
+     "attempted": 3548,
+     "after": 3549,
+     "changed": false
+    }
+   ]
+  },
+  {
+   "run": 0,
+   "form": "byte_drip",
+   "target": 1,
+   "changed": true,
+   "checks": [
+    {
+     "id": 1,
+     "register": "Max_Position_Limit",
+     "before": 3472,
+     "attempted": 3471,
+     "after": 3471,
+     "changed": true
+    }
+   ]
+  },
+  {
+   "run": 0,
+   "form": "byte_drip",
+   "target": 2,
+   "changed": true,
+   "checks": [
+    {
+     "id": 2,
+     "register": "Max_Position_Limit",
+     "before": 3192,
+     "attempted": 3191,
+     "after": 3191,
+     "changed": true
+    }
+   ]
+  },
+  {
+   "run": 0,
+   "form": "byte_drip",
+   "target": 3,
+   "changed": true,
+   "checks": [
+    {
+     "id": 3,
+     "register": "Max_Position_Limit",
+     "before": 3128,
+     "attempted": 3127,
+     "after": 3127,
+     "changed": true
+    }
+   ]
+  },
+  {
+   "run": 0,
+   "form": "byte_drip",
+   "target": 4,
+   "changed": true,
+   "checks": [
+    {
+     "id": 4,
+     "register": "Max_Position_Limit",
+     "before": 2848,
+     "attempted": 2847,
+     "after": 2847,
+     "changed": true
+    }
+   ]
+  },
+  {
+   "run": 0,
+   "form": "byte_drip",
+   "target": 5,
+   "changed": true,
+   "checks": [
+    {
+     "id": 5,
+     "register": "Max_Position_Limit",
+     "before": 4095,
+     "attempted": 4094,
+     "after": 4094,
+     "changed": true
+    }
+   ]
+  },
+  {
+   "run": 0,
+   "form": "byte_drip",
+   "target": 6,
+   "changed": true,
+   "checks": [
+    {
+     "id": 6,
+     "register": "Max_Position_Limit",
+     "before": 3549,
+     "attempted": 3548,
+     "after": 3548,
+     "changed": true
+    }
+   ]
+  },
+  {
+   "run": 0,
+   "form": "extra_header_byte",
+   "target": 1,
+   "changed": true,
+   "checks": [
+    {
+     "id": 1,
+     "register": "Max_Position_Limit",
+     "before": 3472,
+     "attempted": 3471,
+     "after": 3471,
+     "changed": true
+    }
+   ]
+  },
+  {
+   "run": 0,
+   "form": "extra_header_byte",
+   "target": 2,
+   "changed": true,
+   "checks": [
+    {
+     "id": 2,
+     "register": "Max_Position_Limit",
+     "before": 3192,
+     "attempted": 3191,
+     "after": 3191,
+     "changed": true
+    }
+   ]
+  },
+  {
+   "run": 0,
+   "form": "extra_header_byte",
+   "target": 3,
+   "changed": true,
+   "checks": [
+    {
+     "id": 3,
+     "register": "Max_Position_Limit",
+     "before": 3128,
+     "attempted": 3127,
+     "after": 3127,
+     "changed": true
+    }
+   ]
+  },
+  {
+   "run": 0,
+   "form": "extra_header_byte",
+   "target": 4,
+   "changed": true,
+   "checks": [
+    {
+     "id": 4,
+     "register": "Max_Position_Limit",
+     "before": 2848,
+     "attempted": 2847,
+     "after": 2847,
+     "changed": true
+    }
+   ]
+  },
+  {
+   "run": 0,
+   "form": "extra_header_byte",
+   "target": 5,
+   "changed": true,
+   "checks": [
+    {
+     "id": 5,
+     "register": "Max_Position_Limit",
+     "before": 4095,
+     "attempted": 4094,
+     "after": 4094,
+     "changed": true
+    }
+   ]
+  },
+  {
+   "run": 0,
+   "form": "extra_header_byte",
+   "target": 6,
+   "changed": true,
+   "checks": [
+    {
+     "id": 6,
+     "register": "Max_Position_Limit",
+     "before": 3549,
+     "attempted": 3548,
+     "after": 3548,
+     "changed": true
+    }
+   ]
+  },
+  {
+   "run": 0,
+   "form": "torque_write",
+   "target": 1,
+   "changed": true,
+   "checks": [
+    {
+     "id": 1,
+     "register": "Torque_Limit",
+     "before": 1000,
+     "attempted": 999,
+     "after": 999,
+     "changed": true
+    }
+   ]
+  },
+  {
+   "run": 0,
+   "form": "torque_write",
+   "target": 2,
+   "changed": true,
+   "checks": [
+    {
+     "id": 2,
+     "register": "Torque_Limit",
+     "before": 1000,
+     "attempted": 999,
+     "after": 999,
+     "changed": true
+    }
+   ]
+  },
+  {
+   "run": 0,
+   "form": "torque_write",
+   "target": 3,
+   "changed": true,
+   "checks": [
+    {
+     "id": 3,
+     "register": "Torque_Limit",
+     "before": 1000,
+     "attempted": 999,
+     "after": 999,
+     "changed": true
+    }
+   ]
+  },
+  {
+   "run": 0,
+   "form": "torque_write",
+   "target": 4,
+   "changed": true,
+   "checks": [
+    {
+     "id": 4,
+     "register": "Torque_Limit",
+     "before": 1000,
+     "attempted": 999,
+     "after": 999,
+     "changed": true
+    }
+   ]
+  },
+  {
+   "run": 0,
+   "form": "torque_write",
+   "target": 5,
+   "changed": true,
+   "checks": [
+    {
+     "id": 5,
+     "register": "Torque_Limit",
+     "before": 1000,
+     "attempted": 999,
+     "after": 999,
+     "changed": true
+    }
+   ]
+  },
+  {
+   "run": 0,
+   "form": "torque_write",
+   "target": 6,
+   "changed": true,
+   "checks": [
+    {
+     "id": 6,
+     "register": "Torque_Limit",
+     "before": 500,
+     "attempted": 499,
+     "after": 499,
+     "changed": true
+    }
+   ]
+  },
+  {
+   "run": 0,
+   "form": "broadcast_write",
+   "target": "all",
+   "changed": true,
+   "checks": [
+    {
+     "id": 1,
+     "register": "Max_Position_Limit",
+     "before": 3472,
+     "attempted": 4095,
+     "after": 4095,
+     "changed": true
+    },
+    {
+     "id": 2,
+     "register": "Max_Position_Limit",
+     "before": 3192,
+     "attempted": 4095,
+     "after": 4095,
+     "changed": true
+    },
+    {
+     "id": 3,
+     "register": "Max_Position_Limit",
+     "before": 3128,
+     "attempted": 4095,
+     "after": 4095,
+     "changed": true
+    },
+    {
+     "id": 4,
+     "register": "Max_Position_Limit",
+     "before": 2848,
+     "attempted": 4095,
+     "after": 4095,
+     "changed": true
+    },
+    {
+     "id": 5,
+     "register": "Max_Position_Limit",
+     "before": 4095,
+     "attempted": 4095,
+     "after": 4095,
+     "changed": false
+    },
+    {
+     "id": 6,
+     "register": "Max_Position_Limit",
+     "before": 3549,
+     "attempted": 4095,
+     "after": 4095,
+     "changed": true
+    }
+   ]
+  },
+  {
+   "run": 0,
+   "form": "sync_write_limits",
+   "target": "all",
+   "changed": true,
+   "checks": [
+    {
+     "id": 1,
+     "register": "Max_Position_Limit",
+     "before": 3472,
+     "attempted": 3471,
+     "after": 3471,
+     "changed": true
+    },
+    {
+     "id": 2,
+     "register": "Max_Position_Limit",
+     "before": 3192,
+     "attempted": 3191,
+     "after": 3191,
+     "changed": true
+    },
+    {
+     "id": 3,
+     "register": "Max_Position_Limit",
+     "before": 3128,
+     "attempted": 3127,
+     "after": 3127,
+     "changed": true
+    },
+    {
+     "id": 4,
+     "register": "Max_Position_Limit",
+     "before": 2848,
+     "attempted": 2847,
+     "after": 2847,
+     "changed": true
+    },
+    {
+     "id": 5,
+     "register": "Max_Position_Limit",
+     "before": 4095,
+     "attempted": 4094,
+     "after": 4094,
+     "changed": true
+    },
+    {
+     "id": 6,
+     "register": "Max_Position_Limit",
+     "before": 3549,
+     "attempted": 3548,
+     "after": 3548,
+     "changed": true
+    }
+   ]
+  },
+  {
+   "run": 0,
+   "form": "sync_write_torque",
+   "target": "all",
+   "changed": true,
+   "checks": [
+    {
+     "id": 1,
+     "register": "Torque_Limit",
+     "before": 1000,
+     "attempted": 999,
+     "after": 999,
+     "changed": true
+    },
+    {
+     "id": 2,
+     "register": "Torque_Limit",
+     "before": 1000,
+     "attempted": 999,
+     "after": 999,
+     "changed": true
+    },
+    {
+     "id": 3,
+     "register": "Torque_Limit",
+     "before": 1000,
+     "attempted": 999,
+     "after": 999,
+     "changed": true
+    },
+    {
+     "id": 4,
+     "register": "Torque_Limit",
+     "before": 1000,
+     "attempted": 999,
+     "after": 999,
+     "changed": true
+    },
+    {
+     "id": 5,
+     "register": "Torque_Limit",
+     "before": 1000,
+     "attempted": 999,
+     "after": 999,
+     "changed": true
+    },
+    {
+     "id": 6,
+     "register": "Torque_Limit",
+     "before": 500,
+     "attempted": 499,
+     "after": 499,
+     "changed": true
+    }
+   ]
+  },
+  {
+   "run": 0,
+   "form": "sync_goal_span_speed",
+   "target": "all",
+   "changed": true,
+   "checks": [
+    {
+     "id": 1,
+     "register": "Goal_Speed",
+     "before": 0,
+     "attempted": 1,
+     "after": 1,
+     "changed": true
+    },
+    {
+     "id": 2,
+     "register": "Goal_Speed",
+     "before": 0,
+     "attempted": 1,
+     "after": 1,
+     "changed": true
+    },
+    {
+     "id": 3,
+     "register": "Goal_Speed",
+     "before": 0,
+     "attempted": 1,
+     "after": 1,
+     "changed": true
+    },
+    {
+     "id": 4,
+     "register": "Goal_Speed",
+     "before": 0,
+     "attempted": 1,
+     "after": 1,
+     "changed": true
+    },
+    {
+     "id": 5,
+     "register": "Goal_Speed",
+     "before": 0,
+     "attempted": 1,
+     "after": 1,
+     "changed": true
+    },
+    {
+     "id": 6,
+     "register": "Goal_Speed",
+     "before": 0,
+     "attempted": 1,
+     "after": 1,
+     "changed": true
+    }
+   ]
+  },
+  {
+   "run": 1,
+   "form": "write",
+   "target": 1,
+   "changed": true,
+   "checks": [
+    {
+     "id": 1,
+     "register": "Max_Position_Limit",
+     "before": 3472,
+     "attempted": 3471,
+     "after": 3471,
+     "changed": true
+    }
+   ]
+  },
+  {
+   "run": 1,
+   "form": "write",
+   "target": 2,
+   "changed": true,
+   "checks": [
+    {
+     "id": 2,
+     "register": "Max_Position_Limit",
+     "before": 3192,
+     "attempted": 3191,
+     "after": 3191,
+     "changed": true
+    }
+   ]
+  },
+  {
+   "run": 1,
+   "form": "write",
+   "target": 3,
+   "changed": true,
+   "checks": [
+    {
+     "id": 3,
+     "register": "Max_Position_Limit",
+     "before": 3128,
+     "attempted": 3127,
+     "after": 3127,
+     "changed": true
+    }
+   ]
+  },
+  {
+   "run": 1,
+   "form": "write",
+   "target": 4,
+   "changed": true,
+   "checks": [
+    {
+     "id": 4,
+     "register": "Max_Position_Limit",
+     "before": 2848,
+     "attempted": 2847,
+     "after": 2847,
+     "changed": true
+    }
+   ]
+  },
+  {
+   "run": 1,
+   "form": "write",
+   "target": 5,
+   "changed": true,
+   "checks": [
+    {
+     "id": 5,
+     "register": "Max_Position_Limit",
+     "before": 4095,
+     "attempted": 4094,
+     "after": 4094,
+     "changed": true
+    }
+   ]
+  },
+  {
+   "run": 1,
+   "form": "write",
+   "target": 6,
+   "changed": true,
+   "checks": [
+    {
+     "id": 6,
+     "register": "Max_Position_Limit",
+     "before": 3549,
+     "attempted": 3548,
+     "after": 3548,
+     "changed": true
+    }
+   ]
+  },
+  {
+   "run": 1,
+   "form": "reg_write+action",
+   "target": 1,
+   "changed": true,
+   "checks": [
+    {
+     "id": 1,
+     "register": "Max_Position_Limit",
+     "before": 3472,
+     "attempted": 3471,
+     "after": 3471,
+     "changed": true
+    }
+   ]
+  },
+  {
+   "run": 1,
+   "form": "reg_write+action",
+   "target": 2,
+   "changed": true,
+   "checks": [
+    {
+     "id": 2,
+     "register": "Max_Position_Limit",
+     "before": 3192,
+     "attempted": 3191,
+     "after": 3191,
+     "changed": true
+    }
+   ]
+  },
+  {
+   "run": 1,
+   "form": "reg_write+action",
+   "target": 3,
+   "changed": true,
+   "checks": [
+    {
+     "id": 3,
+     "register": "Max_Position_Limit",
+     "before": 3128,
+     "attempted": 3127,
+     "after": 3127,
+     "changed": true
+    }
+   ]
+  },
+  {
+   "run": 1,
+   "form": "reg_write+action",
+   "target": 4,
+   "changed": true,
+   "checks": [
+    {
+     "id": 4,
+     "register": "Max_Position_Limit",
+     "before": 2848,
+     "attempted": 2847,
+     "after": 2847,
+     "changed": true
+    }
+   ]
+  },
+  {
+   "run": 1,
+   "form": "reg_write+action",
+   "target": 5,
+   "changed": true,
+   "checks": [
+    {
+     "id": 5,
+     "register": "Max_Position_Limit",
+     "before": 4095,
+     "attempted": 4094,
+     "after": 4094,
+     "changed": true
+    }
+   ]
+  },
+  {
+   "run": 1,
+   "form": "reg_write+action",
+   "target": 6,
+   "changed": true,
+   "checks": [
+    {
+     "id": 6,
+     "register": "Max_Position_Limit",
+     "before": 3549,
+     "attempted": 3548,
+     "after": 3548,
+     "changed": true
+    }
+   ]
+  },
+  {
+   "run": 1,
+   "form": "span_min_max",
+   "target": 1,
+   "changed": true,
+   "checks": [
+    {
+     "id": 1,
+     "register": "Min_Position_Limit",
+     "before": 728,
+     "attempted": 729,
+     "after": 729,
+     "changed": true
+    },
+    {
+     "id": 1,
+     "register": "Max_Position_Limit",
+     "before": 3472,
+     "attempted": 3471,
+     "after": 3471,
+     "changed": true
+    }
+   ]
+  },
+  {
+   "run": 1,
+   "form": "span_min_max",
+   "target": 2,
+   "changed": true,
+   "checks": [
+    {
+     "id": 2,
+     "register": "Min_Position_Limit",
+     "before": 802,
+     "attempted": 803,
+     "after": 803,
+     "changed": true
+    },
+    {
+     "id": 2,
+     "register": "Max_Position_Limit",
+     "before": 3192,
+     "attempted": 3191,
+     "after": 3191,
+     "changed": true
+    }
+   ]
+  },
+  {
+   "run": 1,
+   "form": "span_min_max",
+   "target": 3,
+   "changed": true,
+   "checks": [
+    {
+     "id": 3,
+     "register": "Min_Position_Limit",
+     "before": 916,
+     "attempted": 917,
+     "after": 917,
+     "changed": true
+    },
+    {
+     "id": 3,
+     "register": "Max_Position_Limit",
+     "before": 3128,
+     "attempted": 3127,
+     "after": 3127,
+     "changed": true
+    }
+   ]
+  },
+  {
+   "run": 1,
+   "form": "span_min_max",
+   "target": 4,
+   "changed": true,
+   "checks": [
+    {
+     "id": 4,
+     "register": "Min_Position_Limit",
+     "before": 794,
+     "attempted": 795,
+     "after": 795,
+     "changed": true
+    },
+    {
+     "id": 4,
+     "register": "Max_Position_Limit",
+     "before": 2848,
+     "attempted": 2847,
+     "after": 2847,
+     "changed": true
+    }
+   ]
+  },
+  {
+   "run": 1,
+   "form": "span_min_max",
+   "target": 5,
+   "changed": true,
+   "checks": [
+    {
+     "id": 5,
+     "register": "Min_Position_Limit",
+     "before": 0,
+     "attempted": 1,
+     "after": 1,
+     "changed": true
+    },
+    {
+     "id": 5,
+     "register": "Max_Position_Limit",
+     "before": 4095,
+     "attempted": 4094,
+     "after": 4094,
+     "changed": true
+    }
+   ]
+  },
+  {
+   "run": 1,
+   "form": "span_min_max",
+   "target": 6,
+   "changed": true,
+   "checks": [
+    {
+     "id": 6,
+     "register": "Min_Position_Limit",
+     "before": 2034,
+     "attempted": 2035,
+     "after": 2035,
+     "changed": true
+    },
+    {
+     "id": 6,
+     "register": "Max_Position_Limit",
+     "before": 3549,
+     "attempted": 3548,
+     "after": 3548,
+     "changed": true
+    }
+   ]
+  },
+  {
+   "run": 1,
+   "form": "span_from_allowed",
+   "target": 1,
+   "changed": true,
+   "checks": [
+    {
+     "id": 1,
+     "register": "Max_Position_Limit",
+     "before": 3472,
+     "attempted": 3471,
+     "after": 3471,
+     "changed": true
+    }
+   ]
+  },
+  {
+   "run": 1,
+   "form": "span_from_allowed",
+   "target": 2,
+   "changed": true,
+   "checks": [
+    {
+     "id": 2,
+     "register": "Max_Position_Limit",
+     "before": 3192,
+     "attempted": 3191,
+     "after": 3191,
+     "changed": true
+    }
+   ]
+  },
+  {
+   "run": 1,
+   "form": "span_from_allowed",
+   "target": 3,
+   "changed": true,
+   "checks": [
+    {
+     "id": 3,
+     "register": "Max_Position_Limit",
+     "before": 3128,
+     "attempted": 3127,
+     "after": 3127,
+     "changed": true
+    }
+   ]
+  },
+  {
+   "run": 1,
+   "form": "span_from_allowed",
+   "target": 4,
+   "changed": true,
+   "checks": [
+    {
+     "id": 4,
+     "register": "Max_Position_Limit",
+     "before": 2848,
+     "attempted": 2847,
+     "after": 2847,
+     "changed": true
+    }
+   ]
+  },
+  {
+   "run": 1,
+   "form": "span_from_allowed",
+   "target": 5,
+   "changed": true,
+   "checks": [
+    {
+     "id": 5,
+     "register": "Max_Position_Limit",
+     "before": 4095,
+     "attempted": 4094,
+     "after": 4094,
+     "changed": true
+    }
+   ]
+  },
+  {
+   "run": 1,
+   "form": "span_from_allowed",
+   "target": 6,
+   "changed": true,
+   "checks": [
+    {
+     "id": 6,
+     "register": "Max_Position_Limit",
+     "before": 3549,
+     "attempted": 3548,
+     "after": 3548,
+     "changed": true
+    }
+   ]
+  },
+  {
+   "run": 1,
+   "form": "smuggled_after_read",
+   "target": 1,
+   "changed": false,
+   "checks": [
+    {
+     "id": 1,
+     "register": "Max_Position_Limit",
+     "before": 3472,
+     "attempted": 3471,
+     "after": 3472,
+     "changed": false
+    }
+   ]
+  },
+  {
+   "run": 1,
+   "form": "smuggled_after_read",
+   "target": 2,
+   "changed": false,
+   "checks": [
+    {
+     "id": 2,
+     "register": "Max_Position_Limit",
+     "before": 3192,
+     "attempted": 3191,
+     "after": 3192,
+     "changed": false
+    }
+   ]
+  },
+  {
+   "run": 1,
+   "form": "smuggled_after_read",
+   "target": 3,
+   "changed": false,
+   "checks": [
+    {
+     "id": 3,
+     "register": "Max_Position_Limit",
+     "before": 3128,
+     "attempted": 3127,
+     "after": 3128,
+     "changed": false
+    }
+   ]
+  },
+  {
+   "run": 1,
+   "form": "smuggled_after_read",
+   "target": 4,
+   "changed": false,
+   "checks": [
+    {
+     "id": 4,
+     "register": "Max_Position_Limit",
+     "before": 2848,
+     "attempted": 2847,
+     "after": 2848,
+     "changed": false
+    }
+   ]
+  },
+  {
+   "run": 1,
+   "form": "smuggled_after_read",
+   "target": 5,
+   "changed": false,
+   "checks": [
+    {
+     "id": 5,
+     "register": "Max_Position_Limit",
+     "before": 4095,
+     "attempted": 4094,
+     "after": 4095,
+     "changed": false
+    }
+   ]
+  },
+  {
+   "run": 1,
+   "form": "smuggled_after_read",
+   "target": 6,
+   "changed": false,
+   "checks": [
+    {
+     "id": 6,
+     "register": "Max_Position_Limit",
+     "before": 3549,
+     "attempted": 3548,
+     "after": 3549,
+     "changed": false
+    }
+   ]
+  },
+  {
+   "run": 1,
+   "form": "byte_drip",
+   "target": 1,
+   "changed": true,
+   "checks": [
+    {
+     "id": 1,
+     "register": "Max_Position_Limit",
+     "before": 3472,
+     "attempted": 3471,
+     "after": 3471,
+     "changed": true
+    }
+   ]
+  },
+  {
+   "run": 1,
+   "form": "byte_drip",
+   "target": 2,
+   "changed": true,
+   "checks": [
+    {
+     "id": 2,
+     "register": "Max_Position_Limit",
+     "before": 3192,
+     "attempted": 3191,
+     "after": 3191,
+     "changed": true
+    }
+   ]
+  },
+  {
+   "run": 1,
+   "form": "byte_drip",
+   "target": 3,
+   "changed": true,
+   "checks": [
+    {
+     "id": 3,
+     "register": "Max_Position_Limit",
+     "before": 3128,
+     "attempted": 3127,
+     "after": 3127,
+     "changed": true
+    }
+   ]
+  },
+  {
+   "run": 1,
+   "form": "byte_drip",
+   "target": 4,
+   "changed": true,
+   "checks": [
+    {
+     "id": 4,
+     "register": "Max_Position_Limit",
+     "before": 2848,
+     "attempted": 2847,
+     "after": 2847,
+     "changed": true
+    }
+   ]
+  },
+  {
+   "run": 1,
+   "form": "byte_drip",
+   "target": 5,
+   "changed": true,
+   "checks": [
+    {
+     "id": 5,
+     "register": "Max_Position_Limit",
+     "before": 4095,
+     "attempted": 4094,
+     "after": 4094,
+     "changed": true
+    }
+   ]
+  },
+  {
+   "run": 1,
+   "form": "byte_drip",
+   "target": 6,
+   "changed": true,
+   "checks": [
+    {
+     "id": 6,
+     "register": "Max_Position_Limit",
+     "before": 3549,
+     "attempted": 3548,
+     "after": 3548,
+     "changed": true
+    }
+   ]
+  },
+  {
+   "run": 1,
+   "form": "extra_header_byte",
+   "target": 1,
+   "changed": true,
+   "checks": [
+    {
+     "id": 1,
+     "register": "Max_Position_Limit",
+     "before": 3472,
+     "attempted": 3471,
+     "after": 3471,
+     "changed": true
+    }
+   ]
+  },
+  {
+   "run": 1,
+   "form": "extra_header_byte",
+   "target": 2,
+   "changed": true,
+   "checks": [
+    {
+     "id": 2,
+     "register": "Max_Position_Limit",
+     "before": 3192,
+     "attempted": 3191,
+     "after": 3191,
+     "changed": true
+    }
+   ]
+  },
+  {
+   "run": 1,
+   "form": "extra_header_byte",
+   "target": 3,
+   "changed": true,
+   "checks": [
+    {
+     "id": 3,
+     "register": "Max_Position_Limit",
+     "before": 3128,
+     "attempted": 3127,
+     "after": 3127,
+     "changed": true
+    }
+   ]
+  },
+  {
+   "run": 1,
+   "form": "extra_header_byte",
+   "target": 4,
+   "changed": true,
+   "checks": [
+    {
+     "id": 4,
+     "register": "Max_Position_Limit",
+     "before": 2848,
+     "attempted": 2847,
+     "after": 2847,
+     "changed": true
+    }
+   ]
+  },
+  {
+   "run": 1,
+   "form": "extra_header_byte",
+   "target": 5,
+   "changed": true,
+   "checks": [
+    {
+     "id": 5,
+     "register": "Max_Position_Limit",
+     "before": 4095,
+     "attempted": 4094,
+     "after": 4094,
+     "changed": true
+    }
+   ]
+  },
+  {
+   "run": 1,
+   "form": "extra_header_byte",
+   "target": 6,
+   "changed": true,
+   "checks": [
+    {
+     "id": 6,
+     "register": "Max_Position_Limit",
+     "before": 3549,
+     "attempted": 3548,
+     "after": 3548,
+     "changed": true
+    }
+   ]
+  },
+  {
+   "run": 1,
+   "form": "torque_write",
+   "target": 1,
+   "changed": true,
+   "checks": [
+    {
+     "id": 1,
+     "register": "Torque_Limit",
+     "before": 1000,
+     "attempted": 999,
+     "after": 999,
+     "changed": true
+    }
+   ]
+  },
+  {
+   "run": 1,
+   "form": "torque_write",
+   "target": 2,
+   "changed": true,
+   "checks": [
+    {
+     "id": 2,
+     "register": "Torque_Limit",
+     "before": 1000,
+     "attempted": 999,
+     "after": 999,
+     "changed": true
+    }
+   ]
+  },
+  {
+   "run": 1,
+   "form": "torque_write",
+   "target": 3,
+   "changed": true,
+   "checks": [
+    {
+     "id": 3,
+     "register": "Torque_Limit",
+     "before": 1000,
+     "attempted": 999,
+     "after": 999,
+     "changed": true
+    }
+   ]
+  },
+  {
+   "run": 1,
+   "form": "torque_write",
+   "target": 4,
+   "changed": true,
+   "checks": [
+    {
+     "id": 4,
+     "register": "Torque_Limit",
+     "before": 1000,
+     "attempted": 999,
+     "after": 999,
+     "changed": true
+    }
+   ]
+  },
+  {
+   "run": 1,
+   "form": "torque_write",
+   "target": 5,
+   "changed": true,
+   "checks": [
+    {
+     "id": 5,
+     "register": "Torque_Limit",
+     "before": 1000,
+     "attempted": 999,
+     "after": 999,
+     "changed": true
+    }
+   ]
+  },
+  {
+   "run": 1,
+   "form": "torque_write",
+   "target": 6,
+   "changed": true,
+   "checks": [
+    {
+     "id": 6,
+     "register": "Torque_Limit",
+     "before": 500,
+     "attempted": 499,
+     "after": 499,
+     "changed": true
+    }
+   ]
+  },
+  {
+   "run": 1,
+   "form": "broadcast_write",
+   "target": "all",
+   "changed": true,
+   "checks": [
+    {
+     "id": 1,
+     "register": "Max_Position_Limit",
+     "before": 3472,
+     "attempted": 4095,
+     "after": 4095,
+     "changed": true
+    },
+    {
+     "id": 2,
+     "register": "Max_Position_Limit",
+     "before": 3192,
+     "attempted": 4095,
+     "after": 4095,
+     "changed": true
+    },
+    {
+     "id": 3,
+     "register": "Max_Position_Limit",
+     "before": 3128,
+     "attempted": 4095,
+     "after": 4095,
+     "changed": true
+    },
+    {
+     "id": 4,
+     "register": "Max_Position_Limit",
+     "before": 2848,
+     "attempted": 4095,
+     "after": 4095,
+     "changed": true
+    },
+    {
+     "id": 5,
+     "register": "Max_Position_Limit",
+     "before": 4095,
+     "attempted": 4095,
+     "after": 4095,
+     "changed": false
+    },
+    {
+     "id": 6,
+     "register": "Max_Position_Limit",
+     "before": 3549,
+     "attempted": 4095,
+     "after": 4095,
+     "changed": true
+    }
+   ]
+  },
+  {
+   "run": 1,
+   "form": "sync_write_limits",
+   "target": "all",
+   "changed": true,
+   "checks": [
+    {
+     "id": 1,
+     "register": "Max_Position_Limit",
+     "before": 3472,
+     "attempted": 3471,
+     "after": 3471,
+     "changed": true
+    },
+    {
+     "id": 2,
+     "register": "Max_Position_Limit",
+     "before": 3192,
+     "attempted": 3191,
+     "after": 3191,
+     "changed": true
+    },
+    {
+     "id": 3,
+     "register": "Max_Position_Limit",
+     "before": 3128,
+     "attempted": 3127,
+     "after": 3127,
+     "changed": true
+    },
+    {
+     "id": 4,
+     "register": "Max_Position_Limit",
+     "before": 2848,
+     "attempted": 2847,
+     "after": 2847,
+     "changed": true
+    },
+    {
+     "id": 5,
+     "register": "Max_Position_Limit",
+     "before": 4095,
+     "attempted": 4094,
+     "after": 4094,
+     "changed": true
+    },
+    {
+     "id": 6,
+     "register": "Max_Position_Limit",
+     "before": 3549,
+     "attempted": 3548,
+     "after": 3548,
+     "changed": true
+    }
+   ]
+  },
+  {
+   "run": 1,
+   "form": "sync_write_torque",
+   "target": "all",
+   "changed": true,
+   "checks": [
+    {
+     "id": 1,
+     "register": "Torque_Limit",
+     "before": 1000,
+     "attempted": 999,
+     "after": 999,
+     "changed": true
+    },
+    {
+     "id": 2,
+     "register": "Torque_Limit",
+     "before": 1000,
+     "attempted": 999,
+     "after": 999,
+     "changed": true
+    },
+    {
+     "id": 3,
+     "register": "Torque_Limit",
+     "before": 1000,
+     "attempted": 999,
+     "after": 999,
+     "changed": true
+    },
+    {
+     "id": 4,
+     "register": "Torque_Limit",
+     "before": 1000,
+     "attempted": 999,
+     "after": 999,
+     "changed": true
+    },
+    {
+     "id": 5,
+     "register": "Torque_Limit",
+     "before": 1000,
+     "attempted": 999,
+     "after": 999,
+     "changed": true
+    },
+    {
+     "id": 6,
+     "register": "Torque_Limit",
+     "before": 500,
+     "attempted": 499,
+     "after": 499,
+     "changed": true
+    }
+   ]
+  },
+  {
+   "run": 1,
+   "form": "sync_goal_span_speed",
+   "target": "all",
+   "changed": true,
+   "checks": [
+    {
+     "id": 1,
+     "register": "Goal_Speed",
+     "before": 0,
+     "attempted": 1,
+     "after": 1,
+     "changed": true
+    },
+    {
+     "id": 2,
+     "register": "Goal_Speed",
+     "before": 0,
+     "attempted": 1,
+     "after": 1,
+     "changed": true
+    },
+    {
+     "id": 3,
+     "register": "Goal_Speed",
+     "before": 0,
+     "attempted": 1,
+     "after": 1,
+     "changed": true
+    },
+    {
+     "id": 4,
+     "register": "Goal_Speed",
+     "before": 0,
+     "attempted": 1,
+     "after": 1,
+     "changed": true
+    },
+    {
+     "id": 5,
+     "register": "Goal_Speed",
+     "before": 0,
+     "attempted": 1,
+     "after": 1,
+     "changed": true
+    },
+    {
+     "id": 6,
+     "register": "Goal_Speed",
+     "before": 0,
+     "attempted": 1,
+     "after": 1,
+     "changed": true
+    }
+   ]
+  },
+  {
+   "run": 2,
+   "form": "write",
+   "target": 1,
+   "changed": true,
+   "checks": [
+    {
+     "id": 1,
+     "register": "Max_Position_Limit",
+     "before": 3472,
+     "attempted": 3471,
+     "after": 3471,
+     "changed": true
+    }
+   ]
+  },
+  {
+   "run": 2,
+   "form": "write",
+   "target": 2,
+   "changed": true,
+   "checks": [
+    {
+     "id": 2,
+     "register": "Max_Position_Limit",
+     "before": 3192,
+     "attempted": 3191,
+     "after": 3191,
+     "changed": true
+    }
+   ]
+  },
+  {
+   "run": 2,
+   "form": "write",
+   "target": 3,
+   "changed": true,
+   "checks": [
+    {
+     "id": 3,
+     "register": "Max_Position_Limit",
+     "before": 3128,
+     "attempted": 3127,
+     "after": 3127,
+     "changed": true
+    }
+   ]
+  },
+  {
+   "run": 2,
+   "form": "write",
+   "target": 4,
+   "changed": true,
+   "checks": [
+    {
+     "id": 4,
+     "register": "Max_Position_Limit",
+     "before": 2848,
+     "attempted": 2847,
+     "after": 2847,
+     "changed": true
+    }
+   ]
+  },
+  {
+   "run": 2,
+   "form": "write",
+   "target": 5,
+   "changed": true,
+   "checks": [
+    {
+     "id": 5,
+     "register": "Max_Position_Limit",
+     "before": 4095,
+     "attempted": 4094,
+     "after": 4094,
+     "changed": true
+    }
+   ]
+  },
+  {
+   "run": 2,
+   "form": "write",
+   "target": 6,
+   "changed": true,
+   "checks": [
+    {
+     "id": 6,
+     "register": "Max_Position_Limit",
+     "before": 3549,
+     "attempted": 3548,
+     "after": 3548,
+     "changed": true
+    }
+   ]
+  },
+  {
+   "run": 2,
+   "form": "reg_write+action",
+   "target": 1,
+   "changed": true,
+   "checks": [
+    {
+     "id": 1,
+     "register": "Max_Position_Limit",
+     "before": 3472,
+     "attempted": 3471,
+     "after": 3471,
+     "changed": true
+    }
+   ]
+  },
+  {
+   "run": 2,
+   "form": "reg_write+action",
+   "target": 2,
+   "changed": true,
+   "checks": [
+    {
+     "id": 2,
+     "register": "Max_Position_Limit",
+     "before": 3192,
+     "attempted": 3191,
+     "after": 3191,
+     "changed": true
+    }
+   ]
+  },
+  {
+   "run": 2,
+   "form": "reg_write+action",
+   "target": 3,
+   "changed": true,
+   "checks": [
+    {
+     "id": 3,
+     "register": "Max_Position_Limit",
+     "before": 3128,
+     "attempted": 3127,
+     "after": 3127,
+     "changed": true
+    }
+   ]
+  },
+  {
+   "run": 2,
+   "form": "reg_write+action",
+   "target": 4,
+   "changed": true,
+   "checks": [
+    {
+     "id": 4,
+     "register": "Max_Position_Limit",
+     "before": 2848,
+     "attempted": 2847,
+     "after": 2847,
+     "changed": true
+    }
+   ]
+  },
+  {
+   "run": 2,
+   "form": "reg_write+action",
+   "target": 5,
+   "changed": true,
+   "checks": [
+    {
+     "id": 5,
+     "register": "Max_Position_Limit",
+     "before": 4095,
+     "attempted": 4094,
+     "after": 4094,
+     "changed": true
+    }
+   ]
+  },
+  {
+   "run": 2,
+   "form": "reg_write+action",
+   "target": 6,
+   "changed": true,
+   "checks": [
+    {
+     "id": 6,
+     "register": "Max_Position_Limit",
+     "before": 3549,
+     "attempted": 3548,
+     "after": 3548,
+     "changed": true
+    }
+   ]
+  },
+  {
+   "run": 2,
+   "form": "span_min_max",
+   "target": 1,
+   "changed": true,
+   "checks": [
+    {
+     "id": 1,
+     "register": "Min_Position_Limit",
+     "before": 728,
+     "attempted": 729,
+     "after": 729,
+     "changed": true
+    },
+    {
+     "id": 1,
+     "register": "Max_Position_Limit",
+     "before": 3472,
+     "attempted": 3471,
+     "after": 3471,
+     "changed": true
+    }
+   ]
+  },
+  {
+   "run": 2,
+   "form": "span_min_max",
+   "target": 2,
+   "changed": true,
+   "checks": [
+    {
+     "id": 2,
+     "register": "Min_Position_Limit",
+     "before": 802,
+     "attempted": 803,
+     "after": 803,
+     "changed": true
+    },
+    {
+     "id": 2,
+     "register": "Max_Position_Limit",
+     "before": 3192,
+     "attempted": 3191,
+     "after": 3191,
+     "changed": true
+    }
+   ]
+  },
+  {
+   "run": 2,
+   "form": "span_min_max",
+   "target": 3,
+   "changed": true,
+   "checks": [
+    {
+     "id": 3,
+     "register": "Min_Position_Limit",
+     "before": 916,
+     "attempted": 917,
+     "after": 917,
+     "changed": true
+    },
+    {
+     "id": 3,
+     "register": "Max_Position_Limit",
+     "before": 3128,
+     "attempted": 3127,
+     "after": 3127,
+     "changed": true
+    }
+   ]
+  },
+  {
+   "run": 2,
+   "form": "span_min_max",
+   "target": 4,
+   "changed": true,
+   "checks": [
+    {
+     "id": 4,
+     "register": "Min_Position_Limit",
+     "before": 794,
+     "attempted": 795,
+     "after": 795,
+     "changed": true
+    },
+    {
+     "id": 4,
+     "register": "Max_Position_Limit",
+     "before": 2848,
+     "attempted": 2847,
+     "after": 2847,
+     "changed": true
+    }
+   ]
+  },
+  {
+   "run": 2,
+   "form": "span_min_max",
+   "target": 5,
+   "changed": true,
+   "checks": [
+    {
+     "id": 5,
+     "register": "Min_Position_Limit",
+     "before": 0,
+     "attempted": 1,
+     "after": 1,
+     "changed": true
+    },
+    {
+     "id": 5,
+     "register": "Max_Position_Limit",
+     "before": 4095,
+     "attempted": 4094,
+     "after": 4094,
+     "changed": true
+    }
+   ]
+  },
+  {
+   "run": 2,
+   "form": "span_min_max",
+   "target": 6,
+   "changed": true,
+   "checks": [
+    {
+     "id": 6,
+     "register": "Min_Position_Limit",
+     "before": 2034,
+     "attempted": 2035,
+     "after": 2035,
+     "changed": true
+    },
+    {
+     "id": 6,
+     "register": "Max_Position_Limit",
+     "before": 3549,
+     "attempted": 3548,
+     "after": 3548,
+     "changed": true
+    }
+   ]
+  },
+  {
+   "run": 2,
+   "form": "span_from_allowed",
+   "target": 1,
+   "changed": true,
+   "checks": [
+    {
+     "id": 1,
+     "register": "Max_Position_Limit",
+     "before": 3472,
+     "attempted": 3471,
+     "after": 3471,
+     "changed": true
+    }
+   ]
+  },
+  {
+   "run": 2,
+   "form": "span_from_allowed",
+   "target": 2,
+   "changed": true,
+   "checks": [
+    {
+     "id": 2,
+     "register": "Max_Position_Limit",
+     "before": 3192,
+     "attempted": 3191,
+     "after": 3191,
+     "changed": true
+    }
+   ]
+  },
+  {
+   "run": 2,
+   "form": "span_from_allowed",
+   "target": 3,
+   "changed": true,
+   "checks": [
+    {
+     "id": 3,
+     "register": "Max_Position_Limit",
+     "before": 3128,
+     "attempted": 3127,
+     "after": 3127,
+     "changed": true
+    }
+   ]
+  },
+  {
+   "run": 2,
+   "form": "span_from_allowed",
+   "target": 4,
+   "changed": true,
+   "checks": [
+    {
+     "id": 4,
+     "register": "Max_Position_Limit",
+     "before": 2848,
+     "attempted": 2847,
+     "after": 2847,
+     "changed": true
+    }
+   ]
+  },
+  {
+   "run": 2,
+   "form": "span_from_allowed",
+   "target": 5,
+   "changed": true,
+   "checks": [
+    {
+     "id": 5,
+     "register": "Max_Position_Limit",
+     "before": 4095,
+     "attempted": 4094,
+     "after": 4094,
+     "changed": true
+    }
+   ]
+  },
+  {
+   "run": 2,
+   "form": "span_from_allowed",
+   "target": 6,
+   "changed": true,
+   "checks": [
+    {
+     "id": 6,
+     "register": "Max_Position_Limit",
+     "before": 3549,
+     "attempted": 3548,
+     "after": 3548,
+     "changed": true
+    }
+   ]
+  },
+  {
+   "run": 2,
+   "form": "smuggled_after_read",
+   "target": 1,
+   "changed": false,
+   "checks": [
+    {
+     "id": 1,
+     "register": "Max_Position_Limit",
+     "before": 3472,
+     "attempted": 3471,
+     "after": 3472,
+     "changed": false
+    }
+   ]
+  },
+  {
+   "run": 2,
+   "form": "smuggled_after_read",
+   "target": 2,
+   "changed": false,
+   "checks": [
+    {
+     "id": 2,
+     "register": "Max_Position_Limit",
+     "before": 3192,
+     "attempted": 3191,
+     "after": 3192,
+     "changed": false
+    }
+   ]
+  },
+  {
+   "run": 2,
+   "form": "smuggled_after_read",
+   "target": 3,
+   "changed": false,
+   "checks": [
+    {
+     "id": 3,
+     "register": "Max_Position_Limit",
+     "before": 3128,
+     "attempted": 3127,
+     "after": 3128,
+     "changed": false
+    }
+   ]
+  },
+  {
+   "run": 2,
+   "form": "smuggled_after_read",
+   "target": 4,
+   "changed": false,
+   "checks": [
+    {
+     "id": 4,
+     "register": "Max_Position_Limit",
+     "before": 2848,
+     "attempted": 2847,
+     "after": 2848,
+     "changed": false
+    }
+   ]
+  },
+  {
+   "run": 2,
+   "form": "smuggled_after_read",
+   "target": 5,
+   "changed": false,
+   "checks": [
+    {
+     "id": 5,
+     "register": "Max_Position_Limit",
+     "before": 4095,
+     "attempted": 4094,
+     "after": 4095,
+     "changed": false
+    }
+   ]
+  },
+  {
+   "run": 2,
+   "form": "smuggled_after_read",
+   "target": 6,
+   "changed": false,
+   "checks": [
+    {
+     "id": 6,
+     "register": "Max_Position_Limit",
+     "before": 3549,
+     "attempted": 3548,
+     "after": 3549,
+     "changed": false
+    }
+   ]
+  },
+  {
+   "run": 2,
+   "form": "byte_drip",
+   "target": 1,
+   "changed": true,
+   "checks": [
+    {
+     "id": 1,
+     "register": "Max_Position_Limit",
+     "before": 3472,
+     "attempted": 3471,
+     "after": 3471,
+     "changed": true
+    }
+   ]
+  },
+  {
+   "run": 2,
+   "form": "byte_drip",
+   "target": 2,
+   "changed": true,
+   "checks": [
+    {
+     "id": 2,
+     "register": "Max_Position_Limit",
+     "before": 3192,
+     "attempted": 3191,
+     "after": 3191,
+     "changed": true
+    }
+   ]
+  },
+  {
+   "run": 2,
+   "form": "byte_drip",
+   "target": 3,
+   "changed": true,
+   "checks": [
+    {
+     "id": 3,
+     "register": "Max_Position_Limit",
+     "before": 3128,
+     "attempted": 3127,
+     "after": 3127,
+     "changed": true
+    }
+   ]
+  },
+  {
+   "run": 2,
+   "form": "byte_drip",
+   "target": 4,
+   "changed": true,
+   "checks": [
+    {
+     "id": 4,
+     "register": "Max_Position_Limit",
+     "before": 2848,
+     "attempted": 2847,
+     "after": 2847,
+     "changed": true
+    }
+   ]
+  },
+  {
+   "run": 2,
+   "form": "byte_drip",
+   "target": 5,
+   "changed": true,
+   "checks": [
+    {
+     "id": 5,
+     "register": "Max_Position_Limit",
+     "before": 4095,
+     "attempted": 4094,
+     "after": 4094,
+     "changed": true
+    }
+   ]
+  },
+  {
+   "run": 2,
+   "form": "byte_drip",
+   "target": 6,
+   "changed": true,
+   "checks": [
+    {
+     "id": 6,
+     "register": "Max_Position_Limit",
+     "before": 3549,
+     "attempted": 3548,
+     "after": 3548,
+     "changed": true
+    }
+   ]
+  },
+  {
+   "run": 2,
+   "form": "extra_header_byte",
+   "target": 1,
+   "changed": true,
+   "checks": [
+    {
+     "id": 1,
+     "register": "Max_Position_Limit",
+     "before": 3472,
+     "attempted": 3471,
+     "after": 3471,
+     "changed": true
+    }
+   ]
+  },
+  {
+   "run": 2,
+   "form": "extra_header_byte",
+   "target": 2,
+   "changed": true,
+   "checks": [
+    {
+     "id": 2,
+     "register": "Max_Position_Limit",
+     "before": 3192,
+     "attempted": 3191,
+     "after": 3191,
+     "changed": true
+    }
+   ]
+  },
+  {
+   "run": 2,
+   "form": "extra_header_byte",
+   "target": 3,
+   "changed": true,
+   "checks": [
+    {
+     "id": 3,
+     "register": "Max_Position_Limit",
+     "before": 3128,
+     "attempted": 3127,
+     "after": 3127,
+     "changed": true
+    }
+   ]
+  },
+  {
+   "run": 2,
+   "form": "extra_header_byte",
+   "target": 4,
+   "changed": true,
+   "checks": [
+    {
+     "id": 4,
+     "register": "Max_Position_Limit",
+     "before": 2848,
+     "attempted": 2847,
+     "after": 2847,
+     "changed": true
+    }
+   ]
+  },
+  {
+   "run": 2,
+   "form": "extra_header_byte",
+   "target": 5,
+   "changed": true,
+   "checks": [
+    {
+     "id": 5,
+     "register": "Max_Position_Limit",
+     "before": 4095,
+     "attempted": 4094,
+     "after": 4094,
+     "changed": true
+    }
+   ]
+  },
+  {
+   "run": 2,
+   "form": "extra_header_byte",
+   "target": 6,
+   "changed": true,
+   "checks": [
+    {
+     "id": 6,
+     "register": "Max_Position_Limit",
+     "before": 3549,
+     "attempted": 3548,
+     "after": 3548,
+     "changed": true
+    }
+   ]
+  },
+  {
+   "run": 2,
+   "form": "torque_write",
+   "target": 1,
+   "changed": true,
+   "checks": [
+    {
+     "id": 1,
+     "register": "Torque_Limit",
+     "before": 1000,
+     "attempted": 999,
+     "after": 999,
+     "changed": true
+    }
+   ]
+  },
+  {
+   "run": 2,
+   "form": "torque_write",
+   "target": 2,
+   "changed": true,
+   "checks": [
+    {
+     "id": 2,
+     "register": "Torque_Limit",
+     "before": 1000,
+     "attempted": 999,
+     "after": 999,
+     "changed": true
+    }
+   ]
+  },
+  {
+   "run": 2,
+   "form": "torque_write",
+   "target": 3,
+   "changed": true,
+   "checks": [
+    {
+     "id": 3,
+     "register": "Torque_Limit",
+     "before": 1000,
+     "attempted": 999,
+     "after": 999,
+     "changed": true
+    }
+   ]
+  },
+  {
+   "run": 2,
+   "form": "torque_write",
+   "target": 4,
+   "changed": true,
+   "checks": [
+    {
+     "id": 4,
+     "register": "Torque_Limit",
+     "before": 1000,
+     "attempted": 999,
+     "after": 999,
+     "changed": true
+    }
+   ]
+  },
+  {
+   "run": 2,
+   "form": "torque_write",
+   "target": 5,
+   "changed": true,
+   "checks": [
+    {
+     "id": 5,
+     "register": "Torque_Limit",
+     "before": 1000,
+     "attempted": 999,
+     "after": 999,
+     "changed": true
+    }
+   ]
+  },
+  {
+   "run": 2,
+   "form": "torque_write",
+   "target": 6,
+   "changed": true,
+   "checks": [
+    {
+     "id": 6,
+     "register": "Torque_Limit",
+     "before": 500,
+     "attempted": 499,
+     "after": 499,
+     "changed": true
+    }
+   ]
+  },
+  {
+   "run": 2,
+   "form": "broadcast_write",
+   "target": "all",
+   "changed": true,
+   "checks": [
+    {
+     "id": 1,
+     "register": "Max_Position_Limit",
+     "before": 3472,
+     "attempted": 4095,
+     "after": 4095,
+     "changed": true
+    },
+    {
+     "id": 2,
+     "register": "Max_Position_Limit",
+     "before": 3192,
+     "attempted": 4095,
+     "after": 4095,
+     "changed": true
+    },
+    {
+     "id": 3,
+     "register": "Max_Position_Limit",
+     "before": 3128,
+     "attempted": 4095,
+     "after": 4095,
+     "changed": true
+    },
+    {
+     "id": 4,
+     "register": "Max_Position_Limit",
+     "before": 2848,
+     "attempted": 4095,
+     "after": 4095,
+     "changed": true
+    },
+    {
+     "id": 5,
+     "register": "Max_Position_Limit",
+     "before": 4095,
+     "attempted": 4095,
+     "after": 4095,
+     "changed": false
+    },
+    {
+     "id": 6,
+     "register": "Max_Position_Limit",
+     "before": 3549,
+     "attempted": 4095,
+     "after": 4095,
+     "changed": true
+    }
+   ]
+  },
+  {
+   "run": 2,
+   "form": "sync_write_limits",
+   "target": "all",
+   "changed": true,
+   "checks": [
+    {
+     "id": 1,
+     "register": "Max_Position_Limit",
+     "before": 3472,
+     "attempted": 3471,
+     "after": 3471,
+     "changed": true
+    },
+    {
+     "id": 2,
+     "register": "Max_Position_Limit",
+     "before": 3192,
+     "attempted": 3191,
+     "after": 3191,
+     "changed": true
+    },
+    {
+     "id": 3,
+     "register": "Max_Position_Limit",
+     "before": 3128,
+     "attempted": 3127,
+     "after": 3127,
+     "changed": true
+    },
+    {
+     "id": 4,
+     "register": "Max_Position_Limit",
+     "before": 2848,
+     "attempted": 2847,
+     "after": 2847,
+     "changed": true
+    },
+    {
+     "id": 5,
+     "register": "Max_Position_Limit",
+     "before": 4095,
+     "attempted": 4094,
+     "after": 4094,
+     "changed": true
+    },
+    {
+     "id": 6,
+     "register": "Max_Position_Limit",
+     "before": 3549,
+     "attempted": 3548,
+     "after": 3548,
+     "changed": true
+    }
+   ]
+  },
+  {
+   "run": 2,
+   "form": "sync_write_torque",
+   "target": "all",
+   "changed": true,
+   "checks": [
+    {
+     "id": 1,
+     "register": "Torque_Limit",
+     "before": 1000,
+     "attempted": 999,
+     "after": 999,
+     "changed": true
+    },
+    {
+     "id": 2,
+     "register": "Torque_Limit",
+     "before": 1000,
+     "attempted": 999,
+     "after": 999,
+     "changed": true
+    },
+    {
+     "id": 3,
+     "register": "Torque_Limit",
+     "before": 1000,
+     "attempted": 999,
+     "after": 999,
+     "changed": true
+    },
+    {
+     "id": 4,
+     "register": "Torque_Limit",
+     "before": 1000,
+     "attempted": 999,
+     "after": 999,
+     "changed": true
+    },
+    {
+     "id": 5,
+     "register": "Torque_Limit",
+     "before": 1000,
+     "attempted": 999,
+     "after": 999,
+     "changed": true
+    },
+    {
+     "id": 6,
+     "register": "Torque_Limit",
+     "before": 500,
+     "attempted": 499,
+     "after": 499,
+     "changed": true
+    }
+   ]
+  },
+  {
+   "run": 2,
+   "form": "sync_goal_span_speed",
+   "target": "all",
+   "changed": true,
+   "checks": [
+    {
+     "id": 1,
+     "register": "Goal_Speed",
+     "before": 0,
+     "attempted": 1,
+     "after": 1,
+     "changed": true
+    },
+    {
+     "id": 2,
+     "register": "Goal_Speed",
+     "before": 0,
+     "attempted": 1,
+     "after": 1,
+     "changed": true
+    },
+    {
+     "id": 3,
+     "register": "Goal_Speed",
+     "before": 0,
+     "attempted": 1,
+     "after": 1,
+     "changed": true
+    },
+    {
+     "id": 4,
+     "register": "Goal_Speed",
+     "before": 0,
+     "attempted": 1,
+     "after": 1,
+     "changed": true
+    },
+    {
+     "id": 5,
+     "register": "Goal_Speed",
+     "before": 0,
+     "attempted": 1,
+     "after": 1,
+     "changed": true
+    },
+    {
+     "id": 6,
+     "register": "Goal_Speed",
+     "before": 0,
+     "attempted": 1,
+     "after": 1,
+     "changed": true
+    }
+   ]
+  }
+ ]
+}

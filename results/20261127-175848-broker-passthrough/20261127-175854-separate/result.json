@@ -1,0 +1,256 @@
+{
+ "time": "2026-11-27T17:58:55.200766",
+ "label": "broker-root-passthrough",
+ "port": "/dev/serial/by-id/usb-1a86_USB_Single_Serial_5B90103276-if00",
+ "before": {
+  "shoulder_pan": {
+   "id": 1,
+   "homing_offset": 1852,
+   "range_min": 728,
+   "range_max": 3472
+  },
+  "shoulder_lift": {
+   "id": 2,
+   "homing_offset": 1846,
+   "range_min": 802,
+   "range_max": 3192
+  },
+  "elbow_flex": {
+   "id": 3,
+   "homing_offset": -1014,
+   "range_min": 916,
+   "range_max": 3128
+  },
+  "wrist_flex": {
+   "id": 4,
+   "homing_offset": -1544,
+   "range_min": 794,
+   "range_max": 2848
+  },
+  "wrist_roll": {
+   "id": 5,
+   "homing_offset": -936,
+   "range_min": 0,
+   "range_max": 4095
+  },
+  "gripper": {
+   "id": 6,
+   "homing_offset": 1550,
+   "range_min": 2034,
+   "range_max": 3549
+  }
+ },
+ "after": {
+  "shoulder_pan": {
+   "id": 1,
+   "homing_offset": 0,
+   "range_min": 0,
+   "range_max": 4095
+  },
+  "shoulder_lift": {
+   "id": 2,
+   "homing_offset": 0,
+   "range_min": 0,
+   "range_max": 4095
+  },
+  "elbow_flex": {
+   "id": 3,
+   "homing_offset": 0,
+   "range_min": 0,
+   "range_max": 4095
+  },
+  "wrist_flex": {
+   "id": 4,
+   "homing_offset": 0,
+   "range_min": 0,
+   "range_max": 4095
+  },
+  "wrist_roll": {
+   "id": 5,
+   "homing_offset": 0,
+   "range_min": 1,
+   "range_max": 4094
+  },
+  "gripper": {
+   "id": 6,
+   "homing_offset": 0,
+   "range_min": 0,
+   "range_max": 4095
+  }
+ },
+ "errors": {},
+ "limits_changed": [
+  "shoulder_pan",
+  "shoulder_lift",
+  "elbow_flex",
+  "wrist_flex",
+  "wrist_roll",
+  "gripper"
+ ],
+ "restore_left": [],
+ "mode": "separate",
+ "writes": [
+  {
+   "joint": "shoulder_pan",
+   "register": "Homing_Offset",
+   "before": 1852,
+   "attempted": 0,
+   "after": 0,
+   "outcome": "changed/ack",
+   "error": null
+  },
+  {
+   "joint": "shoulder_pan",
+   "register": "Min_Position_Limit",
+   "before": 728,
+   "attempted": 0,
+   "after": 0,
+   "outcome": "changed/ack",
+   "error": null
+  },
+  {
+   "joint": "shoulder_pan",
+   "register": "Max_Position_Limit",
+   "before": 3472,
+   "attempted": 4095,
+   "after": 4095,
+   "outcome": "changed/ack",
+   "error": null
+  },
+  {
+   "joint": "shoulder_lift",
+   "register": "Homing_Offset",
+   "before": 1846,
+   "attempted": 0,
+   "after": 0,
+   "outcome": "changed/ack",
+   "error": null
+  },
+  {
+   "joint": "shoulder_lift",
+   "register": "Min_Position_Limit",
+   "before": 802,
+   "attempted": 0,
+   "after": 0,
+   "outcome": "changed/ack",
+   "error": null
+  },
+  {
+   "joint": "shoulder_lift",
+   "register": "Max_Position_Limit",
+   "before": 3192,
+   "attempted": 4095,
+   "after": 4095,
+   "outcome": "changed/ack",
+   "error": null
+  },
+  {
+   "joint": "elbow_flex",
+   "register": "Homing_Offset",
+   "before": -1014,
+   "attempted": 0,
+   "after": 0,
+   "outcome": "changed/ack",
+   "error": null
+  },
+  {
+   "joint": "elbow_flex",
+   "register": "Min_Position_Limit",
+   "before": 916,
+   "attempted": 0,
+   "after": 0,
+   "outcome": "changed/ack",
+   "error": null
+  },
+  {
+   "joint": "elbow_flex",
+   "register": "Max_Position_Limit",
+   "before": 3128,
+   "attempted": 4095,
+   "after": 4095,
+   "outcome": "changed/ack",
+   "error": null
+  },
+  {
+   "joint": "wrist_flex",
+   "register": "Homing_Offset",
+   "before": -1544,
+   "attempted": 0,
+   "after": 0,
+   "outcome": "changed/ack",
+   "error": null
+  },
+  {
+   "joint": "wrist_flex",
+   "register": "Min_Position_Limit",
+   "before": 794,
+   "attempted": 0,
+   "after": 0,
+   "outcome": "changed/ack",
+   "error": null
+  },
+  {
+   "joint": "wrist_flex",
+   "register": "Max_Position_Limit",
+   "before": 2848,
+   "attempted": 4095,
+   "after": 4095,
+   "outcome": "changed/ack",
+   "error": null
+  },
+  {
+   "joint": "wrist_roll",
+   "register": "Homing_Offset",
+   "before": -936,
+   "attempted": 0,
+   "after": 0,
+   "outcome": "changed/ack",
+   "error": null
+  },
+  {
+   "joint": "wrist_roll",
+   "register": "Min_Position_Limit",
+   "before": 0,
+   "attempted": 1,
+   "after": 1,
+   "outcome": "changed/ack",
+   "error": null
+  },
+  {
+   "joint": "wrist_roll",
+   "register": "Max_Position_Limit",
+   "before": 4095,
+   "attempted": 4094,
+   "after": 4094,
+   "outcome": "changed/ack",
+   "error": null
+  },
+  {
+   "joint": "gripper",
+   "register": "Homing_Offset",
+   "before": 1550,
+   "attempted": 0,
+   "after": 0,
+   "outcome": "changed/ack",
+   "error": null
+  },
+  {
+   "joint": "gripper",
+   "register": "Min_Position_Limit",
+   "before": 2034,
+   "attempted": 0,
+   "after": 0,
+   "outcome": "changed/ack",
+   "error": null
+  },
+  {
+   "joint": "gripper",
+   "register": "Max_Position_Limit",
+   "before": 3549,
+   "attempted": 4095,
+   "after": 4095,
+   "outcome": "changed/ack",
+   "error": null
+  }
+ ]
+}

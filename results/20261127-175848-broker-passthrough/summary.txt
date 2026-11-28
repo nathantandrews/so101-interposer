@@ -1,0 +1,14 @@
+firmware: passthrough   Fri Nov 27 05:58:48 PM PST 2026
+broker running as root, pid 194144: /tmp/so101-follower -> real port
+
+== unprivileged attacker (uid 1000, groups: none)
+open real port:   PermissionError: [Errno 13] Permission denied: '/dev/serial/by-id/usb-1a86_USB_Single_Serial_5B90103276-if00'
+kill broker:      kill: sending signal to 194144 failed: Operation not permitted
+18 limit writes through broker: 18 writes tried: 0 registers changed, 18 blocked (no reply, unchanged)
+broker: fwd 59  replies 852B  bad 0  BLOCKED 18 last=write id=6 ins=0x03 addr=11  HOLD 0 n=0 drop=0 clamp=0
+
+== root attacker
+kill broker:      KILLED
+18 limit writes straight to the port: 18 writes tried: 18 registers changed, 0 blocked (no reply, unchanged)
+
+saved /home/nathan/Code/school/so101-interposer/results/20261127-175848-broker-passthrough

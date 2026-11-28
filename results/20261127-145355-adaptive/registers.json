@@ -1,0 +1,44 @@
+{
+ "1": {
+  "Min_Position_Limit": 728,
+  "Max_Position_Limit": 3472,
+  "Homing_Offset": 1852,
+  "Torque_Limit": 1000,
+  "Goal_Speed": 0
+ },
+ "2": {
+  "Min_Position_Limit": 802,
+  "Max_Position_Limit": 3192,
+  "Homing_Offset": 1846,
+  "Torque_Limit": 1000,
+  "Goal_Speed": 0
+ },
+ "3": {
+  "Min_Position_Limit": 916,
+  "Max_Position_Limit": 3128,
+  "Homing_Offset": 3062,
+  "Torque_Limit": 1000,
+  "Goal_Speed": 0
+ },
+ "4": {
+  "Min_Position_Limit": 794,
+  "Max_Position_Limit": 2848,
+  "Homing_Offset": 3592,
+  "Torque_Limit": 1000,
+  "Goal_Speed": 0
+ },
+ "5": {
+  "Min_Position_Limit": 0,
+  "Max_Position_Limit": 4095,
+  "Homing_Offset": 2984,
+  "Torque_Limit": 1000,
+  "Goal_Speed": 0
+ },
+ "6": {
+  "Min_Position_Limit": 2034,
+  "Max_Position_Limit": 3549,
+  "Homing_Offset": 1550,
+  "Torque_Limit": 500,
+  "Goal_Speed": 0
+ }
+}

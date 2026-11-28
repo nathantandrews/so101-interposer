@@ -1,0 +1,2 @@
+broker pid 182927 uid 0: /tmp/so101-follower -> /dev/pts/6 -> /dev/serial/by-id/usb-1a86_USB_Single_Serial_5B90103276-if00
+fwd 29  replies 396B  bad 0  BLOCKED 7 last=write id=3 ins=0x03 addr=31  HOLD 0 n=0 drop=0 clamp=0
